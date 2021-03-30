@@ -27,14 +27,32 @@
 
 	:b <file>
 
-# Go to the next opened tab (of file)
+# Toggle to the next opened tab (of file)
 
 	:gt
 
-# Go to the previous opened tab
+# Toggle to the previous opened tab
 
 	:gT
 
+# Split the current window
+
+	horizontal split
+	
+	:split 
+
+	vertical split
+
+	:vsplit
+
+# Close split window
+
+	<Ctrl> + w,q
+
+# Toggle between split windows 
+
+	<Ctrl> + w, j/k 
+	
 # Open all filers in current older in new tabs
 	
 	:argadd *.sv | tab all
