@@ -1,0 +1,76 @@
+# Clone your fork:
+
+	$ git clone git@github.com:YOUR-USERNAME/YOUR-FORKED-REPO.git
+
+# Add remote from original repository in your forked repository:
+
+	$ cd into/cloned/fork-repo
+	
+	$ git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+	
+	$ git fetch upstream
+
+# Updating your fork from original repo to keep up with their changes:
+
+	$ git pull upstream master
+
+# To upload files to an unexisted repo: 
+	
+	### create that repo on github
+	
+	### git init .  
+	
+	### git add .
+	
+	### git remote add origin git@github.com:username/new_repo
+	
+	  *if these files have already belong to another origin, do: git remote rm origin
+	
+	### git commit -m "sync"
+	
+	### git push origin master 
+
+# To add files with sizes larger than 100MB to .gitignore
+	
+	$ find . -size +100M >> .gitignore
+
+# To undo "add"
+	
+	$ git add reset <file_name>
+
+# To ignore a file that is already checked in, need to untrack the file manually.
+	$ git rm --cached <file_name>
+
+# Untrack all files
+	
+	$ git rm --cached -r . 
+
+	#commit the change again after untracking
+	
+	$ git commit --amend
+
+# Delete all past commits of a repository
+
+	# checkout a new one
+	
+	$git checkout --orphan latest_branch
+
+	#Add all the files
+	
+	$ git add .
+
+	#Commit the changes
+	
+	$ git commit -am "commit message"
+
+	#Delete the branch
+	$ git branch -D master
+
+	#Rename the current branch to master
+	
+	$ git branch -m master
+
+	#Finally, force update your repository
+	
+	$ git push -f origin master
+		
