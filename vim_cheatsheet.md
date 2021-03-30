@@ -51,7 +51,7 @@
 
 # Toggle between split windows 
 
-	<Ctrl> + w, j/k 
+	<Ctrl> + ww (double tap 'w' )
 	
 # Open all filers in current older in new tabs
 	
