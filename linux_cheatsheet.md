@@ -36,6 +36,10 @@
 	
 	$ ls -al --block-size=M
 
+# Check directory size 
+
+	$ du -sh <dir>
+
 # List only directories 
 
 	$ ls -d *.

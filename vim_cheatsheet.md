@@ -72,11 +72,15 @@
 
 # Delete line
 	
-	DD
+	dd
 
 # Cut line (to the clipvoard)
 
-	CC
+	cc
+
+# Yank (copy) line
+
+	yy 
 
 # Copy to OS (outside of vim) clipboard
 
