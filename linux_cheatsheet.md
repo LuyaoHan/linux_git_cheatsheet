@@ -100,3 +100,7 @@
 	$ rm !("file1" | "file2") 
 
 	$ rm -rf !("folder1")
+
+# Open a directory in GUI 
+
+	$ nautilus <dir>
