@@ -28,6 +28,17 @@
 	$ find . -name "[1-9]_*"
 	$ find . -name "*[A-Z][1-9]_*"
 
+# Find keyword in files 
+
+	$ grep -rnw <path> -e <pattern>
+
+		-r : recursive
+
+		-n : line number
+
+		-w : match the whole word
+
+
 # List all files except for names that included certain keywords
 	
 	$ ls - I "name"

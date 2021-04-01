@@ -2,12 +2,21 @@
 	
 	:?text
 
-# Scroll Up/Down
+# Scroll Page Up/Down
 
 	<Ctrl> + E
 
 	<Ctrl> + Y
 
+# Move Cursor
+	
+	Up: k
+
+	Down: j
+
+	Left: h
+
+	Right: l
 # Search this line and substitute
 	
 	:s/search_text/sub_text/g
