@@ -2,6 +2,12 @@
 	
 	:?text
 
+# Scroll Up/Down
+
+	<Ctrl> + E
+
+	<Ctrl> + Y
+
 # Search this line and substitute
 	
 	:s/search_text/sub_text/g
@@ -22,6 +28,8 @@
 # List files in current directory
 
 	:e .
+
+	:edit .
 
 # Open a specific file in a new tab
 
