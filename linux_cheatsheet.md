@@ -115,3 +115,7 @@
 # Open a directory in GUI 
 
 	$ nautilus <dir>
+
+# List all available UART serial ports
+
+	$ ls /dev/tty*

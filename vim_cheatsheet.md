@@ -4,9 +4,9 @@
 
 # Scroll Page Up/Down
 
-	<Ctrl> + E
+	<Ctrl> + e
 
-	<Ctrl> + Y
+	<Ctrl> + y
 
 # Move Cursor
 	
@@ -17,6 +17,7 @@
 	Left: h
 
 	Right: l
+
 # Search this line and substitute
 	
 	:s/search_text/sub_text/g
@@ -107,6 +108,14 @@
 
 	"+p
 
+# Undo last edit
+
+	u
+
+# Redo last edit
+
+	<Ctrl> + r
+
 # Edit column 
 
     1. Ctrl + v column mode edit command, select using arrow keys.
@@ -114,3 +123,6 @@
     4. Type in desired text. Note it's normal at the time of typing only ONE row is changed and showed.
     5. Press the Esc key to apply the changes to the selected column
 
+# Use vim as a diff-checker
+
+	vim -d <file1> <file2>
