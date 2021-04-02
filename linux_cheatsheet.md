@@ -49,8 +49,10 @@
 
 # Check directory size 
 
-	$ du -sh <dir>
+	$ du -sh <dir/file>
 
+	$ du --summarize --human-readable <dir/file>
+ 
 # List only directories 
 
 	$ ls -d *.

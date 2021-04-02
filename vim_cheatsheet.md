@@ -2,11 +2,17 @@
 	
 	:?text
 
-# Scroll Page Up/Down
+# Scroll Page Up/Down (Extra-line / Yester-line)
 
 	<Ctrl> + e
 
 	<Ctrl> + y
+
+# Navegate cursor (Extra / Back)
+
+	 Forward: e
+
+	 Backward: b
 
 # Move Cursor
 	
@@ -30,7 +36,7 @@
 	
 	:%s/search_text/sub_text/gc
 
-# Right-Tab selected lines
+# Right-Tab (visual mode) selected lines
 	
 	:v 
 	>>
