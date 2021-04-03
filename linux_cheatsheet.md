@@ -121,3 +121,9 @@
 # List all available UART serial ports
 
 	$ ls /dev/tty*
+
+# Install Debian Packages (.deb)
+
+	$ dpkg --install <.deb>
+
+	$ dpkg -i <.deb>
