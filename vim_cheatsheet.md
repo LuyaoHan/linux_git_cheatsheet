@@ -47,6 +47,8 @@
 
 	:edit .
 
+	:Explore
+
 # Open a specific file in a new tab
 
 	:b <file>
