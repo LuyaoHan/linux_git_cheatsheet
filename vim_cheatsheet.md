@@ -131,4 +131,12 @@
 
 # Use vim as a diff-checker
 
-	vim -d <file1> <file2>
+	$ vim -d <file1> <file2>
+
+# Set tab equal to N spaces 
+
+	:set tabstop=<N>
+
+# Set show number
+
+	:set number

@@ -1,4 +1,4 @@
-# Match from the beginning to the first space
+# Match from the beginning to the first space -- " "
 
 	regex = "^\S+"
 
@@ -15,3 +15,9 @@
 # Count the number of words (between each space)
 	
 	regex = "[a-z]+"
+
+# Remove every substring between "=" and "," including the two
+
+	regex = "=(.*?)*,"
+
+	re.sub(regex,"",port_names_raw)	  
