@@ -139,6 +139,16 @@
 
 	:set tabstop=<N>
 
-# Set show number
+# Show line number
 
 	:set number
+
+# Go to line number
+
+	1. <line_number>
+
+	2. <Shift> + g
+
+# Current file name and line number
+
+	<Ctrl> + g 
