@@ -2,11 +2,17 @@
 	
 	:?text
 
-# Scroll Page Up/Down (Extra-line / Yester-line)
+# Scroll Page Up/Down slowly (Extra-line / Yester-line)
 
 	<Ctrl> + e
 
 	<Ctrl> + y
+
+# Scroll Page Up/Down Quickly
+
+	<Shift> + Up
+
+	<Shift> + Down
 
 # Navegate cursor (Extra / Back)
 
@@ -32,9 +38,17 @@
 	
 	:%s/search_text/sub_text/g
 
-# Search and substitute with yes/no prompt
+# Search and substitute globally with yes/no choice
 	
 	:%s/search_text/sub_text/gc
+
+# Delete all line with <keyword>
+
+	:g/<keyword>/dd
+
+# Highlight searched texts
+	
+	:set hlsearch
 
 # Right-Tab (visual mode) selected lines
 	

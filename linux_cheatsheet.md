@@ -28,6 +28,10 @@
 	$ find . -name "[1-9]_*"
 	$ find . -name "*[A-Z][1-9]_*"
 
+# Fina name in directory with maximal depth
+
+	$ find . -name "<name>" -maxdepth <maxdepth>
+
 # Find keyword in files 
 
 	$ grep -rnw <path> -e <pattern>
