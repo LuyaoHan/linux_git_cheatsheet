@@ -106,6 +106,18 @@
 	
 	<Ctrl> + V to enter column select mode
 
+# Edit column 
+
+	1. <Ctrl> + V to enter column select mode
+
+	2. 	<r> for replacing text
+
+		<Shift> + i for insert text 
+
+    3. Type in desired text. Note it's normal at the time of typing only ONE row is changed and showed.
+
+	4. <Esc> to apply change 
+
 # Autocomplete
 	
 	<Ctrl> + N 
@@ -137,13 +149,6 @@
 # Redo last edit
 
 	<Ctrl> + r
-
-# Edit column 
-
-    1. Ctrl + v column mode edit command, select using arrow keys.
-    3. Shift + i to go into insert mode in column mode
-    4. Type in desired text. Note it's normal at the time of typing only ONE row is changed and showed.
-    5. Press the Esc key to apply the changes to the selected column
 
 # Use vim as a diff-checker
 
