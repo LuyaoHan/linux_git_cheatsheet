@@ -67,7 +67,7 @@
 
 	:b <file>
 
-# Toggle to the next opened tab (of file)
+# Toggle to the next opened tab (go-tab)
 
 	:gt
 
@@ -165,4 +165,10 @@
 
 # Current file name and line number
 
-	<Ctrl> + g 
+	<Ctrl> + g
+
+# Open <file> in a new tab
+
+	:tabedit <file>
+	
+	:tabnew <file>

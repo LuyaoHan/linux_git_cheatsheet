@@ -131,3 +131,9 @@
 	$ dpkg --install <.deb>
 
 	$ dpkg -i <.deb>
+
+# Quit Lock Mode
+
+	$ <Ctrl> + q 
+
+
