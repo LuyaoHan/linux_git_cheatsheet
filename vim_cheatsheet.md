@@ -16,9 +16,9 @@
 
 # Navegate cursor (Extra / Back)
 
-	 Forward: e
+	Forward: e
 
-	 Backward: b
+	Backward: b
 
 # Move Cursor
 	
@@ -112,19 +112,17 @@
 
 # Select column
 	
-	<Ctrl> + V to enter column select mode
+	<Ctrl> + v to enter column select mode
 
 # Edit column 
 
-	1. <Ctrl> + V to enter column select mode
+	1. <Ctrl> + v to enter Visual Block Mode (for column select)
 
-	2. 	<r> for replacing text
-
-		<Shift> + i for insert text 
+	2. <Shift> + i to enter Insert Mode 
 
     3. Type in desired text. Note it's normal at the time of typing only ONE row is changed and showed.
 
-	4. <Esc> to apply change 
+	4. <Esc> to apply change to the other rows
 
 # Autocomplete
 	
