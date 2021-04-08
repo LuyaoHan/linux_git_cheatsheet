@@ -8,6 +8,8 @@
 
 	$ ./program &>/dev/null &
 
+	Whatever written to /dev/null will be discarded, forgotten into the void in linux. 
+
 # Embed one command in another
 
 	Example:
@@ -26,6 +28,7 @@
 # Find file with wildcard pattern matching
 	
 	$ find . -name "[1-9]_*"
+	
 	$ find . -name "*[A-Z][1-9]_*"
 
 # Fina name in directory with maximal depth
@@ -136,4 +139,32 @@
 
 # Quit Lock Mode
 
-	$ <Ctrl> + q 
+	$ <Ctrl> + q
+
+# Linux Root Folders
+
+	"/" : the root
+
+	"/bin" : "binary." Programs that are essential for the system to boot and run. 
+
+	"/lib" : "library." contains libraries required by programs from the "/bin" folder
+
+	"/boot" : It contains the linux kernel, initial RAM disk image, and the bootloader. 
+
+	"/dev" : "device." It conatns files for all devices the Linux is able to recognize. 
+
+	"/etc" : "edit text configurations" Human readable text files for system-wide configurations. 
+
+	"/home" : A base directory that contains all the regular users' files.
+
+	"/media" : Used for automatic mounting of removable media such as USB drives, external hard disks, etc. 
+
+	"/mnt" : "mount." Used for manually mounting of removable medias as USB drives, external hard disks, etc.
+
+	"/opt" : "optionals." This is not essential to the OS. It is used to install third-party/user software and programs. 
+
+	 
+# Run command at OS startup 
+
+	sudo crontab -e
+  

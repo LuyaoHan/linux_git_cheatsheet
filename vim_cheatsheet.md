@@ -142,13 +142,13 @@
 
 	"+p
 
-# Undo last edit
+# Undo edit
 
 	u
 
-# Redo last edit
+# Redo edit
 
-	<Ctrl> + r
+	<Ctrl> + r	
 
 # Use vim as a diff-checker
 
@@ -170,7 +170,11 @@
 
 # Current file name and line number
 
-	<Ctrl> + g
+	 <Ctrl> + g
+
+# Current file directory
+
+	1 + <Ctrl> + g
 
 # Open <file> in a new tab
 
