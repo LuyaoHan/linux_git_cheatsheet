@@ -1,3 +1,13 @@
+# Generate ssh key for a machine with new OS installation
+
+	$ ssh-keygen -o
+	
+	### Enter <Enter> for default "key" and "passphrase" entry 
+
+	The public key to be pasted to github website at:
+
+	$ vim ~/.ssh/id_rsa.pub 
+
 # Clone your fork:
 
 	$ git clone git@github.com:<username>/<FORKED_REPO>.git
