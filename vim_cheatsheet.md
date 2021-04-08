@@ -168,11 +168,8 @@
 
 	2. <Shift> + g
 
-# Current file name and line number
 
-	 <Ctrl> + g
-
-# Current file directory
+# Display Current file director and line numbery
 
 	1 + <Ctrl> + g
 
@@ -181,3 +178,7 @@
 	:tabedit <file>
 	
 	:tabnew <file>
+
+# Save current edit as another file
+
+	:w <file_name>
