@@ -1,6 +1,14 @@
 # Clone your fork:
 
-	$ git clone git@github.com:YOUR-USERNAME/YOUR-FORKED-REPO.git
+	$ git clone git@github.com:<username>/<FORKED_REPO>.git
+
+# Pull from the master 
+
+	$ git pull <remote> <branch>
+
+	For example,
+
+	$ git pull origin master
 
 # Add remote from original repository in your forked repository:
 
@@ -39,6 +47,7 @@
 	$ git add reset <file_name>
 
 # To ignore a file that is already checked in, need to untrack the file manually.
+	
 	$ git rm --cached <file_name>
 
 # Untrack all files

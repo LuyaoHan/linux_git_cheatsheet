@@ -35,7 +35,9 @@
 # Find keyword in files 
 
 	$ grep -rnw <path> -e <pattern>
-
+	
+		(!) there's no need for wildcard-matching symbol "*" before/after the <pattern>
+	
 		-r : recursive
 
 		-n : line number
@@ -135,5 +137,3 @@
 # Quit Lock Mode
 
 	$ <Ctrl> + q 
-
-
