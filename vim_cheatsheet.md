@@ -92,6 +92,14 @@
 # Toggle between split windows 
 
 	<Ctrl> + ww (double tap 'w' )
+
+# Increase current font/window size
+
+	<Ctrl> + <Shift> + <+>
+
+# Decrease current font/window size 
+
+	<Ctrl> + <->
 	
 # Open all filers in current older in new tabs
 	
