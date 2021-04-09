@@ -153,3 +153,9 @@
 # Compile of vga_char_86x32.sv was successful.
 # Compile of video_ram.sv was successful.
 # 22 compiles, 0 failed with no errors.
+# reading /home/luyao/Softwares/Mentor/questasim/linux_x86_64/../modelsim.ini
+# Loading project vga_char_display
+# Compile of top.sv was successful.
+# Compile of vga_display.sv was successful.
+# Compile of vga_driver.sv was successful.
+# 3 compiles, 0 failed with no errors.
