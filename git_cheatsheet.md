@@ -1,3 +1,15 @@
+# Add local folders to a remote respository
+
+	0) git init .
+
+	1) git remote add origin <git_repo>
+
+	2) git add . # make sure no files exceeds 100MB
+
+	3) git commit -m "<message>"
+
+	4) git push origin master
+
 # Generate ssh key for a machine with new OS installation
 
 	$ ssh-keygen -o
