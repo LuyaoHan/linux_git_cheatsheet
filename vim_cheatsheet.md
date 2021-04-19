@@ -1,3 +1,25 @@
+# Show line number
+
+	:set number
+
+# Goto top 
+
+	gg
+
+# (Shift) Goto bottom
+
+	<Shift> + g
+
+# Go to <line_number>
+
+	<line_number> + gg
+
+# Autocomplete a commandi for some type
+	
+	: <Ctrl> + d
+
+	availble options and parameters should pop up; it will be the best way to find mnemonics for a specific command.
+
 # General search
 	
 	:?text
@@ -30,6 +52,10 @@
 
 	Right: l
 
+# Search for a specific <keyword>
+
+	:s/<keyword>
+
 # Search this line and substitute
 	
 	:s/search_text/sub_text/g
@@ -45,6 +71,10 @@
 # Delete all line with <keyword>
 
 	:g/<keyword>/dd
+
+# Delete all empty lines
+
+	:g/^$/d
 
 # Highlight searched texts
 	
@@ -124,9 +154,13 @@
 
 	4. <Esc> to apply change to the other rows
 
-# Autocomplete
+# Autocomplete in INSERT mode
 	
-	<Ctrl> + N 
+	<Ctrl> + n
+
+# Autocomplete a command
+
+	:<Ctrl> + d
 
 # Delete line
 	
