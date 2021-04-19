@@ -188,3 +188,9 @@
 # Save current edit as another file
 
 	:w <file_name>
+
+# Open terminal in a new window
+
+	:ter
+
+	:terminal

@@ -92,7 +92,7 @@
 	
 	$ tar -zcvf <folder-name>.tar.gz <folder-name>/ 
 
-	".tar.gz" is the same as ".tgz"
+	(!) ".tar.gz" is the same as ".tgz"
 
 # Encrypt a file with gpg 
 	
@@ -167,4 +167,10 @@
 # Run command at OS startup 
 
 	sudo crontab -e
-  
+
+
+# Commands Table
+| Function                                  | Command Name                | Installation                                 | Common Usage                     |
+| ----------------------------------------- | --------------              | ----------------------------------           | -----------                      |
+| interactive network manager in terminal   | nmtui                       | sudo apt install network_manager             | sudo nmtui                       |
+| hide ubuntu desktop icons                 | gnome-shell-extension-prefs | sudo apt install gnome-shell-extension-prefs | gnome-shell-extension-prefs      |

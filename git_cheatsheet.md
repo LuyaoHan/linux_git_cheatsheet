@@ -1,4 +1,6 @@
-# Generate ssh key for a machine with new OS installation
+# For a machine with new OS installation
+
+	1) Generate ssh key
 
 	$ ssh-keygen -o
 	
@@ -7,6 +9,13 @@
 	The public key to be pasted to github website at:
 
 	$ vim ~/.ssh/id_rsa.pub 
+
+
+	2) Configure local account information
+
+	$ git config --global user.email <email>
+	
+ 	$ git config --global user.name <name>
 
 # Clone your fork:
 
