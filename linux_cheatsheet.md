@@ -168,6 +168,17 @@
 
 	sudo crontab -e
 
+# Unmount USB mount point
+
+	umount /media/<mount_point>
+
+	rm /media/<mount_point>
+
+# Mount a USB
+
+	mkdir /media/<mount_point>
+
+	mount /dev/<usb_device> /media/<mount_point> 
 
 # Commands Table
 | Function                                  | Command Name                | Installation                                 | Common Usage                     |

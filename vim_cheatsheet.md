@@ -228,3 +228,7 @@
 	:ter
 
 	:terminal
+
+# Open terminal in a bottom window
+
+	:bo term
