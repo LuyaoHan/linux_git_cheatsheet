@@ -232,3 +232,17 @@
 # Open terminal in a bottom window
 
 	:bo term
+
+# Open file explorer in a vertial split
+	
+	:Vexplore
+
+# Resize window when having on a horizontal split. (several horizontal windows)
+
+	:resize +<num>
+	:resize -<num>
+
+# Resize window when having a vertical split. (several vertical windows)
+
+	:vertical resize +<num>
+	:vertical resize -<num>
