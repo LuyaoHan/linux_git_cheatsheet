@@ -178,7 +178,7 @@
 
 	mkdir /media/<mount_point>
 
-	mount /dev/<usb_device> /media/<mount_point> 
+	mount /dev/<usb_device> /media/<mount_point>
 
 # Commands Table
 | Function                                  | Command Name                | Installation                                 | Common Usage                     |
