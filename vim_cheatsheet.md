@@ -246,3 +246,7 @@
 
 	:vertical resize +<num>
 	:vertical resize -<num>
+
+# Swap the position of two splited window
+
+	:<Ctrl+w> <Ctrl+r>
