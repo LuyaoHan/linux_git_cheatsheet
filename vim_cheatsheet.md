@@ -172,7 +172,9 @@
 
 # Yank (copy) line
 
-	yy 
+	yy
+
+	<Shift> + y
 
 # Copy to OS (outside of vim) clipboard
 
@@ -250,3 +252,5 @@
 # Swap the position of two splited window
 
 	:<Ctrl+w> <Ctrl+r>
+
+
