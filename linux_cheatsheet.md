@@ -15,6 +15,10 @@
 			source /home/Scripts/script/rc
 	4. Everytime the terminal opens up .bashrc file will be automatically loaded and thus scripts.rc alias will be created.
 
+# Ubuntu-specific Applications 
+	PDF viewer: Okular (install through snapd)
+	File browser: Nautilus
+
 # Scroll up/down in the terminal
 
 	Shift + PgUp
