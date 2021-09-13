@@ -4,6 +4,17 @@
 	2. release  <Print Screen>
 	3. type r-s-i-s-u-b
 
+# (!) Create customized command for terminal
+
+	1. Create a file "script.rc"
+	2. Edit/Add new alias lines to this file 
+			alias <command>="<command sequence 1;command sequence 2>"
+			alias <command>="<command sequence 1;>"
+	3. Add path of script.rc to .bashrc file in home directory
+			Example:
+			source /home/Scripts/script/rc
+	4. Everytime the terminal opens up .bashrc file will be automatically loaded and thus scripts.rc alias will be created.
+
 # Scroll up/down in the terminal
 
 	Shift + PgUp
