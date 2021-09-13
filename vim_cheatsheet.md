@@ -136,6 +136,13 @@
 	:argadd *.sv | tab all
 	:argadd *.cpp | tab all
 
+# Close current tab
+
+	:tabclose 
+	:bd 
+	
+	(bd as in "buffer delete")
+
 # Enter visual mode (to copy text)
 	
 	v
