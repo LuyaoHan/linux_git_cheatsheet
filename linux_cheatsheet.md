@@ -4,6 +4,11 @@
 	2. release  <Print Screen>
 	3. type r-s-i-s-u-b
 
+# Scroll up/down in the terminal
+
+	Shift + PgUp
+	Shift + PgDn
+
 # Run program in the background while surpressing output
 
 	$ ./program &>/dev/null &
