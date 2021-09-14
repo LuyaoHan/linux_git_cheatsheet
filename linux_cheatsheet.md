@@ -16,8 +16,11 @@
 	4. Everytime the terminal opens up .bashrc file will be automatically loaded and thus scripts.rc alias will be created.
 
 # Ubuntu-specific Applications 
-	PDF viewer: Okular (install through snapd)
+	PDF viewer: Okular (install through snapd, better version compared to source from apt)
+	Web automation: google-chrome
 	File browser: Nautilus
+	Text editor: Vim-gtk3
+
 
 # Scroll up/down in the terminal
 
