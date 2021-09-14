@@ -27,6 +27,9 @@
 # Search for certain processes with keyword match from the list of all processes
 	ps aux | grep <processes_keyword>
 
+# Print all environment variables
+	printenv
+
 # Scroll up/down in the terminal
 
 	Shift + PgUp
