@@ -21,6 +21,11 @@
 	File browser: Nautilus
 	Text editor: Vim-gtk3
 
+# List all the processes with their resource usage
+	ps aux 
+
+# Search for certain processes with keyword match from the list of all processes
+	ps aux | grep <processes_keyword>
 
 # Scroll up/down in the terminal
 
