@@ -21,6 +21,9 @@
 	File browser: Nautilus
 	Text editor: Vim-gtk3
 
+# Transfer files with scp
+	scp <local_path> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+
 # List all the processes with their resource usage
 	ps aux 
 
