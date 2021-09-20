@@ -68,6 +68,15 @@
 	
 	:%s/search_text/sub_text/gc
 
+# Search and delete with blind search (regex tip)
+
+	:%s/<known_string_to_search>*.//
+
+	*. represents one unknown-charater after the known_string_to_search
+	*..represents two unknown-charater after the known_string_to_search
+	etc.
+
+
 # Delete all line with <keyword>
 
 	:g/<keyword>/dd
