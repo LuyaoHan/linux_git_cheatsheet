@@ -50,6 +50,9 @@
 
 	$ cp $(find . -name "A") ./target_folder/ 
 
+# Create multiple files with similar names but same extension
+
+	$ touch {<nameA, nameB, nameC>}.<same_extension>
 	
 # Find files with certain name and copy
 	
@@ -146,7 +149,9 @@
  
 
 	For '<target_split>', the suggested name is e.g. "Installer_Splited_"
+	
 	Then the files created from the split will be automatically named:
+	
 	"Installer_Splited_aa", "Installer_Splited_ab", etc.  
 
 # Remove all files in a folder except one/few
