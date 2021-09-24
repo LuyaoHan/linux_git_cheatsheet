@@ -52,7 +52,7 @@
 
 # Dump object(executable) into readable file
 
-	objdump -f <object> > <target_file>
+	objdump -d <object> > <target_file>
 
 # Create multiple files with similar names but same extension
 
