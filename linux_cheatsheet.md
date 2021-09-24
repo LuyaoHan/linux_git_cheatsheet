@@ -50,6 +50,10 @@
 
 	$ cp $(find . -name "A") ./target_folder/ 
 
+# Dump object(executable) into readable file
+
+	objdump -f <object> > <target_file>
+
 # Create multiple files with similar names but same extension
 
 	$ touch {<nameA, nameB, nameC>}.<same_extension>
