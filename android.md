@@ -43,4 +43,28 @@
 
 	$ ssh <username>@<host_ip_address> -p 8022
 
+# List name of application packages:
+adb shell pm list packages -f
 
+# Open application 
+adb shell monkey -p <app.package.name> 1
+
+# Tap screen location
+adb shell input tap <x> <y>
+
+# Transfer file to the android device
+adb push <file_to_transfer> <target_location>
+
+# Delete file on the android device
+adb shell rm -f <target_location>
+
+
+# Example:
+adb shell monkey -p com.instagram.android 1
+adb shell input tap 480 118
+adb shell input tap 680 120
+adb shell input tap 680 120
+adb shell input tap 220 256
+adb shell input text "California Sunset, 2021 Summer"
+(adb shell input keyevent 62 # space)
+adb shell input tap 680 120

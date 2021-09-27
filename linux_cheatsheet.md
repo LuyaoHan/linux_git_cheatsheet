@@ -4,7 +4,7 @@
 	2. release  <Print Screen>
 	3. type r-s-i-s-u-b
 
-# (!) Create customized command for terminal
+# Create customized command for terminal
 
 	1. Create a file "script.rc"
 	2. Edit/Add new alias lines to this file 
@@ -15,6 +15,9 @@
 			source /home/Scripts/script/rc
 	4. Everytime the terminal opens up .bashrc file will be automatically loaded and thus scripts.rc alias will be created.
 
+# List computer hardware information
+	$lshw
+
 # Ubuntu-specific Applications 
 	PDF viewer: Okular (install through snapd, better version compared to source from apt)
 	Web automation: google-chrome
@@ -22,16 +25,16 @@
 	Text editor: Vim-gtk3
 
 # Transfer files with scp
-	scp <local_path> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+	$scp <local_path> <username>@<ssh_host_machine>:<remote_path_to_store_files>
 
 # List all the processes with their resource usage
-	ps aux 
+	$ ps aux 
 
 # Search for certain processes with keyword match from the list of all processes
-	ps aux | grep <processes_keyword>
+	$ ps aux | grep <processes_keyword>
 
 # Print all environment variables
-	printenv
+	$ printenv
 
 # Scroll up/down in the terminal
 
