@@ -58,6 +58,20 @@ adb push <file_to_transfer> <target_location>
 # Delete file on the android device
 adb shell rm -f <target_location>
 
+# ADB without USB cable
+
+	In Termux:
+	
+	su
+	setprop service.adb.tcp.port 5555
+	stop adbd
+	start adbd
+	ifconfig # find the ipv4 address
+
+	In PC terminal:
+	
+	adb tcpip 5555
+	adb connect <ip_address>:5555
 
 # Example:
 adb shell monkey -p com.instagram.android 1
