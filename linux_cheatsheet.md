@@ -229,6 +229,11 @@
 # Create multiple files with same extension
 
 	touch {<file_A>,<file_B>}.<extension>
+
+# Check if certain service is running
+
+	sudo service <service_name> status
+
 # Commands Table
 | Function                                  | Command Name                | Installation                                 | Common Usage                     |
 | ----------------------------------------- | --------------              | ----------------------------------           | -----------                      |
