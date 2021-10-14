@@ -230,6 +230,7 @@
 	
 	touch {<file_A>,<file_B>}.<extension>
 
+<<<<<<< HEAD
 # List network interfaces
 
 	ifconfig
@@ -241,6 +242,11 @@
 # Activate certain network interface
 
 	sudo ifconfig <interface> up
+=======
+# Check if certain service is running
+
+	sudo service <service_name> status
+>>>>>>> a313910f67949ab1065d23d1e1bacd7530420a53
 
 # Commands Table
 | Function                                  | Command Name                | Installation                                 | Common Usage                     |
