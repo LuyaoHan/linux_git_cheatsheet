@@ -251,6 +251,14 @@
 
 	:bo term
 
+# Switch to normal mode (from a terminal)
+
+	<Ctrl>\ , <Ctrl>n
+
+# Exit normal mode
+
+	i
+
 # Open file explorer in a vertial split
 	
 	:Vexplore

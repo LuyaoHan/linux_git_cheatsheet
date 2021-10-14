@@ -117,4 +117,14 @@
 	#Finally, force update your repository
 	
 	$ git push -f origin master
-		
+	
+# Fork a remote branch
+	# identify current branch
+	$ branch
+
+	# make new branch
+	$ git checkout -b "<branch_name>"
+
+	# push this branch to the remote repository
+	$ git push origin <branch_name>
+

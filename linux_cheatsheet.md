@@ -227,8 +227,21 @@
 	mount /dev/<usb_device> /media/<mount_point>
 
 # Create multiple files with same extension
-
+	
 	touch {<file_A>,<file_B>}.<extension>
+
+# List network interfaces
+
+	ifconfig
+
+# Close certain network interface
+
+	sudo ifconfig <interface> down
+
+# Activate certain network interface
+
+	sudo ifconfig <interface> up
+
 # Commands Table
 | Function                                  | Command Name                | Installation                                 | Common Usage                     |
 | ----------------------------------------- | --------------              | ----------------------------------           | -----------                      |
