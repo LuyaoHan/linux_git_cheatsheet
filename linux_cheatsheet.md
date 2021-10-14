@@ -257,3 +257,11 @@
 # Restart service
 
 	sudo service restart <service_name>
+
+# Search for historical command (reverse-i-search)
+
+	Ctrl + R -> search upward
+
+	Ctrl + Shift + R -> search downward
+
+	
