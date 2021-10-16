@@ -76,6 +76,17 @@
 	*..represents two unknown-charater after the known_string_to_search
 	etc.
 
+# Match and delete from beginning to certain string
+
+	:%s/.*\ze<until_string>//
+
+	".*" : match any number of any characters
+
+	"\ze": "until"
+
+	Others:
+
+	"^": start of line
 
 # Delete all line with <keyword>
 

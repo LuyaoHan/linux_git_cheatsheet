@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 # For a machine with new OS installation
 
 	1) Generate ssh key
-=======
+
 # Add local folders to a remote respository
 
 	0) git init .
@@ -15,8 +14,8 @@
 
 	4) git push origin master
 
+
 # Generate ssh key for a machine with new OS installation
->>>>>>> d846b0e5a5dc30d22d73e347cffcd46d4c6231ed
 
 	$ ssh-keygen -o
 	
@@ -128,3 +127,8 @@
 	# push this branch to the remote repository
 	$ git push origin <branch_name>
 
+# Delete a local branch
+	$ git checkout -d <branch_name>
+
+# Delete a remote branch
+	$ git push origin --delete <branch_name>

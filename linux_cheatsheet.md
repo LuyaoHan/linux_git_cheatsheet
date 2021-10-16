@@ -33,6 +33,9 @@
 # Search for certain processes with keyword match from the list of all processes
 	$ ps aux | grep <processes_keyword>
 
+# List all processes in form of a tree
+
+	$ pstree
 # Print all environment variables
 	$ printenv
 
@@ -212,56 +215,56 @@
 	 
 # Run command at OS startup 
 
-	sudo crontab -e
+	$ sudo crontab -e
 
 # Unmount USB mount point
 
-	umount /media/<mount_point>
+	$ umount /media/<mount_point>
 
-	rm /media/<mount_point>
+	$ rm /media/<mount_point>
 
 # Mount a USB
 
-	mkdir /media/<mount_point>
+	$ mkdir /media/<mount_point>
 
-	mount /dev/<usb_device> /media/<mount_point>
+	$ mount /dev/<usb_device> /media/<mount_point>
 
 # Create multiple files with same extension
 	
-	touch {<file_A>,<file_B>}.<extension>
+	$ touch {<file_A>,<file_B>}.<extension>
 
 # List network interfaces
 
-	ifconfig
+	$ ifconfig
 
 # Close certain network interface
 
-	sudo ifconfig <interface> down
+	$ sudo ifconfig <interface> down
 
 # Activate certain network interface
 
-	sudo ifconfig <interface> up
+	$ sudo ifconfig <interface> up
 
 # Check if certain service is running
 
-	sudo service <service_name> status
+	$ sudo service <service_name> status
 
 # Start service
 	
-	sudo service start <service_name>
+	$ sudo service start <service_name>
 
 # Stop service
 	
-	sudo service stop <service_name>
+	$ sudo service stop <service_name>
 
 # Restart service
 
-	sudo service restart <service_name>
+	$ sudo service restart <service_name>
 
 # Search for historical command (reverse-i-search)
 
-	Ctrl + R -> search upward
+	$ Ctrl + R -> search upward
 
-	Ctrl + Shift + R -> search downward
+	$ Ctrl + Shift + R -> search downward
 
 	
