@@ -52,6 +52,14 @@
 
 	Right: l
 
+# Open a new line and edit
+
+	O
+
+# Append to the end of the line.
+	
+	A
+
 # Search for a specific <keyword>
 
 	:s/<keyword>
@@ -75,6 +83,9 @@
 	*. represents one unknown-charater after the known_string_to_search
 	*..represents two unknown-charater after the known_string_to_search
 	etc.
+
+# Search exact match 
+	:?\< <stringto_search> \>
 
 # Match and delete from beginning to certain string
 
