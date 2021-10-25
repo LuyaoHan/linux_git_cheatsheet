@@ -25,7 +25,14 @@
 	Text editor: Vim-gtk3
 
 # Transfer files with scp
-	$scp <local_path> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+	$ scp <local_path> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+
+	# To find username 
+	$ whoami
+
+	# To find ssh_host_machine
+	$ hostname
+
 
 # List all the processes with their resource usage
 	$ ps aux 
@@ -141,6 +148,8 @@
 
 	(!) ".tar.gz" is the same as ".tgz"
 
+	$ tar --create --file <name>.targ --verbose <source_folder_name>/
+
 # Encrypt a file with gpg 
 	
 	Without using public-key cryptography (only a symmetric cipher)
@@ -245,6 +254,22 @@
 
 	$ sudo ifconfig <interface> up
 
+# *ip* was designed to replace ifconfig command.
+# Show ip address
+	$ ip addr show 
+
+# Display the routing table 
+	$ ip route show
+
+# Check available wireless interfaces
+	$ ip link
+
+# Close certain network interface
+	$ ip link set <interface> up
+
+# Turn on certain network interface
+	$ ip link set <interface> down
+
 # Check if certain service is running
 
 	$ sudo service <service_name> status
@@ -267,4 +292,12 @@
 
 	$ Ctrl + Shift + R -> search downward
 
-	
+# Connect to wifi through command line
+
+	# Scan for WIFI networks in range.
+	$ sudo iwlist <interface> scan
+
+	$ iwconfig <interface> essid <wifi_name> key <wifi_password>
+
+	# Obtain the IP address through dhcp
+	$ dhclient <interface>
