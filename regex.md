@@ -11,6 +11,7 @@
 
 	0) Match any characters
 
+	
 	1) Match any chars in either a,b,c, etc.
 
 		[abc]
@@ -81,6 +82,14 @@
 
 		\[
 
+# Match exact
+
+	\<<match_string>\>
+	
+	Ex. match "hello" from helloworld.
+
+	/\<hello\>
+
 # Metacharacters for specifying numbers of characters to match
 
 	1) \+ : to match one or more
@@ -125,9 +134,16 @@
 
 # Match from the beginning to the first space -- " "
 
-	regex = "^\S+"
+	"^\S+"
 
 # Count the number of words (between each space)
 	
-	regex = "[a-z]+"
+	"[a-z]+"
 
+# Match between two spaces
+
+	\s(.*?)\s
+
+# Match between word1 and word2
+
+	<word1>(.*?)<word2>
