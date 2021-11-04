@@ -14,6 +14,9 @@
 
 	4) git push origin master
 
+# Reset local branch to what's at remote
+
+	$ git reset --hard <remote-branch-name>
 
 # Generate ssh key for a machine with new OS installation
 

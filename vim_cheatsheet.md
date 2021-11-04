@@ -1,3 +1,16 @@
+# Navgation
+
+	h j k l (Corrspondly index finger - middle finger - ring finger - and small finger)
+
+# Scroll down 
+
+	Ctrl + e (extra-line)
+
+# Scroll up
+
+	Ctrl + y (yester-line)  
+
+
 # Show line number
 
 	:set number
@@ -23,12 +36,6 @@
 # General search
 	
 	:?text
-
-# Scroll Page Up/Down slowly (Extra-line / Yester-line)
-
-	<Ctrl> + e
-
-	<Ctrl> + y
 
 # Scroll Page Up/Down Quickly
 
