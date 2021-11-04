@@ -25,7 +25,10 @@
 	Text editor: Vim-gtk3
 
 # Transfer files with scp
-	$ scp <local_path> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+	$ scp <file> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+
+	# multuple files
+	$ scp <file_A> <file_B> ... <file_Z> <username>@<ssh_host_machine>:<remote_path_to_store_files>
 
 	# To find username 
 	$ whoami
