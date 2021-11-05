@@ -157,6 +157,10 @@
 
 	<Ctrl> + w,q
 
+# Toggle focus to different window
+
+	<Ctrl> + ww
+
 # Toggle between split windows 
 
 	<Ctrl> + ww (double tap 'w' )

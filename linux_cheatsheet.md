@@ -4,6 +4,10 @@
 	2. release  <Print Screen>
 	3. type r-s-i-s-u-b
 
+# Find command executable location
+
+	$ which <command>
+
 # Create customized command for terminal
 
 	1. Create a file "script.rc"
@@ -15,7 +19,20 @@
 			source /home/Scripts/script/rc
 	4. Everytime the terminal opens up .bashrc file will be automatically loaded and thus scripts.rc alias will be created.
 
+# kill a dead program
+
+	$ ps aux | grep <program_name_keyword>
+
+	# find the pid of the program
+
+	$ kill <pid>
+
+	# kill command can send many different type of signals
+
+	$ kill -l 
+
 # List computer hardware information
+
 	$lshw
 
 # Ubuntu-specific Applications 
