@@ -11,6 +11,22 @@
 	Ctrl + y (yester-line)  
 
 
+# Append to the end of the line.
+	
+	A
+
+# Insert at the beginning of the line
+
+	I
+
+# Moves cursor forward by word
+
+	w
+
+# Moves cursor backward by word
+
+	b
+
 # Show line number
 
 	:set number
@@ -63,9 +79,7 @@
 
 	O
 
-# Append to the end of the line.
-	
-	A
+
 
 # Search for a specific <keyword>
 
