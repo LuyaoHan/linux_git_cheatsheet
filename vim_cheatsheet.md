@@ -11,21 +11,21 @@
 	Ctrl + y (yester-line)  
 
 
-# Append to the end of the line.
+# (A)ppend to the end of the line.
 	
 	A
 
-# Insert at the beginning of the line
+# (I)nsert at the beginning of the line
 
 	I
 
 # Moves cursor forward by word
 
-	w
+	w/W
 
 # Moves cursor backward by word
 
-	b
+	b/B
 
 # Show line number
 
@@ -59,12 +59,6 @@
 
 	<Shift> + Down
 
-# Navegate cursor (Extra / Back)
-
-	Forward: e
-
-	Backward: b
-
 # Move Cursor
 	
 	Up: k
@@ -75,11 +69,13 @@
 
 	Right: l
 
-# Open a new line and edit
+# (o)pen a new line below current
+
+	o
+
+# (O)pen a new line above current
 
 	O
-
-
 
 # Search for a specific <keyword>
 
