@@ -27,7 +27,7 @@
 
 	$ kill <pid>
 
-	# kill command can send many different type of signals
+	# kill command can send many different type of signalsm not only kill
 
 	$ kill -l 
 

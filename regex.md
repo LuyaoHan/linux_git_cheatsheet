@@ -70,6 +70,8 @@
 
 		\s
 
+		\ <- note that there is a space after the backward slash.
+
 	#  Match non-space characters
 
 		\S
@@ -100,7 +102,9 @@
 
 # Match all trailing space
 
-	/\s$/
+	\s$
+
+	\ $
 
 # Metacharacters for specifying numbers of characters to match
 
@@ -112,6 +116,9 @@
 
 	^  : head of line
 
+# Match a word with letters in it being either upper or lower case. 
+
+	/[Jj]ava
 
 # Match and change lower/upper cases
 
@@ -132,3 +139,11 @@
 # One or more space either exist or not exist
 
 	<word1>\s+?<word2>
+
+# Match anything but a whitespace
+
+	[^ ]
+
+	# Example: find all "+" plus sign without a space at the front and at the back
+
+	[^ ]+[^ ]
