@@ -142,8 +142,13 @@
 
 # Match anything but a whitespace
 
-	[^ ]
+	(.*?[^ ])
+
+	(!) .*? means anything, non-greedy
+	[^ ] means a list, anything but " " -- a white space.
 
 	# Example: find all "+" plus sign without a space at the front and at the back
 
 	[^ ]+[^ ]
+
+
