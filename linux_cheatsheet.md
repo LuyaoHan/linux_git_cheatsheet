@@ -321,3 +321,15 @@
 
 	# Obtain the IP address through dhcp
 	$ dhclient <interface>
+
+# Check disk usage (du)
+	
+	(#) Total disk usage of current directory.
+	$ du -sh
+
+	$ du --summarize --human-readable
+
+	(#) Disk usage for each files in the current directory
+
+	$ du -sh *
+
