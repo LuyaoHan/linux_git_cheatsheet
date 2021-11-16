@@ -100,7 +100,7 @@
 
 	/\<hello\>
 
-# Match all trailing space
+# Match all trailing space (lines that ends with a space) 
 
 	\s$
 
@@ -144,11 +144,24 @@
 
 	(.*?[^ ])
 
-	(!) .*? means anything, non-greedy
+	(!) 
+	() means a group
+	.*? means anything, non-greedy
 	[^ ] means a list, anything but " " -- a white space.
 
 	# Example: find all "+" plus sign without a space at the front and at the back
 
 	[^ ]+[^ ]
 
+# Match { not followed by whitespace
+
+	{[^\s]
+
+	(!) [] means match a character present in the list
+
+	(!) ^\s means not whitespace
+
+# Match if not followed by whitespace
+
+	if[^ ]
 
