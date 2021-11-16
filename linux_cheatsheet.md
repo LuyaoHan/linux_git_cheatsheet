@@ -35,11 +35,27 @@
 
 	$lshw
 
-# Ubuntu-specific Applications 
-	PDF viewer: Okular (install through snapd, better version compared to source from apt)
-	Web automation: google-chrome
-	File browser: Nautilus
-	Text editor: Vim-gtk3
+# Turn the computer into ssh server
+
+	$ sudo apt install ssh
+
+	$ sudo systemctl status ssh
+
+	$ sudo systemctl enable --now ssh
+
+	(!) Open the firewall
+
+	$ sudo ufw status verbose
+
+	$ sudo ufw allow ssh
+
+	$ sudo ufw delete allow ssh 
+
+	# How to login?
+
+	$ who -> finds the name of machine
+
+	$ ip addr -> finds ap address after inet
 
 # Transfer files with scp
 	$ scp <file> <username>@<ssh_host_machine>:<remote_path_to_store_files>
