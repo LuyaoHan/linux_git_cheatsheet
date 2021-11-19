@@ -50,7 +50,11 @@
 
 		$ sudo systemctl restart sshd
 
-	
+# Change hostname (Computer name)
+
+	$ vim /etc/hostname
+
+	$ sudo systemctl reboot
 
 # How to login to ssh server from private network?
 	
@@ -74,7 +78,22 @@
 		
 		$ ssh <user>@<public-ip-addr> -p <port>
 
-# Look up DNS domain name. DNS: Domain Naming System
+# Transfer files with scp
+
+	$ scp -P <port> <file> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+
+	# multuple files
+	$ scp -P <port> <file_A> <file_B> ... <file_Z> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+
+	# To find username 
+	$ whoami
+
+	# To find ssh_host_machine
+	$ hostname
+
+# Look up DNS domain name and get ip address.
+
+	(!)DNS: Domain Naming System
 
 	$ nslookup <domain-name>
 
@@ -116,21 +135,15 @@
 
 # List computer hardware information
 
-	$lshw
+	$ lshw
 
+# List computer operating system distribution
 
+	$ cat /etc/os-release
 
-# Transfer files with scp
-	$ scp <file> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+# List Internet ports
 
-	# multuple files
-	$ scp <file_A> <file_B> ... <file_Z> <username>@<ssh_host_machine>:<remote_path_to_store_files>
-
-	# To find username 
-	$ whoami
-
-	# To find ssh_host_machine
-	$ hostname
+	$ cat /etc/services
 
 
 # List all the processes with their resource usage
@@ -310,7 +323,7 @@
 
 	"/dev" : "device." It conatns files for all devices the Linux is able to recognize. 
 
-	"/etc" : "edit text configurations" Human readable text files for system-wide configurations. 
+	"/etc" : "(E)dit (T)ext (C)onfigurations" Human readable text files for system-wide configurations. 
 
 	"/home" : A base directory that contains all the regular users' files.
 
@@ -319,6 +332,8 @@
 	"/mnt" : "mount." Used for manually mounting of removable medias as USB drives, external hard disks, etc.
 
 	"/opt" : "optionals." This is not essential to the OS. It is used to install third-party/user software and programs. 
+
+	"/proc" : "processes." Contains all the current processes in form of files and folders.
 
 	 
 # Run command at OS startup 
