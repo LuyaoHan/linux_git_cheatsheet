@@ -72,7 +72,16 @@
 
 	2. Login
 		
-		$ ssh <who>@<ip-addr> -p <port>
+		$ ssh <user>@<public-ip-addr> -p <port>
+
+# Look up DNS domain name. DNS: Domain Naming System
+
+	$ nslookup <domain-name>
+
+	For example:
+
+	nslookup www.google.com
+
 
 # Find command executable location
 
