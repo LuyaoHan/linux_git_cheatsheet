@@ -297,6 +297,9 @@
 # Display the routing table 
 	$ ip route show
 
+	(!) First line *default via* 172.31.16.1... This address is the address of the router.
+
+
 # Check available wireless interfaces
 	$ ip link
 
