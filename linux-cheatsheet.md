@@ -1,8 +1,78 @@
-# (!)When computer frozen (Ubuntu 20.04)
+# When computer frozen (Ubuntu 20.04)
 	
 	1. press <Alt> + <Print Screen> keys
+	
 	2. release  <Print Screen>
+
 	3. type r-s-i-s-u-b
+
+# Turn a computer into ssh server
+
+	1. Install ssh
+
+		$ sudo apt install ssh
+
+	2. Start ssh daemon
+
+		$ sudo systemctl start sshd
+
+		 Check status
+
+		$ sudo systemctl status sshd
+
+	3. Open the firewall
+
+		$ sudo ufw allow ssh
+	
+		$ sudo ufw status verbose
+
+	4. Login to router control panel and add port forwarding port. For example, 777.
+
+	5. Change login port Edit the /etc/ssh/sshd_config file.
+
+			Port <port-number>
+
+			Example: 420
+
+	6. On the local machine, generate a ssh key by:
+
+			$ ssh-keygen 
+
+	7. Install the public key to the server by:
+
+			$ ssh-copy-id -i ~/.ssh/id_rsa.pub -p <port-number> <user-name>@<ip-address>
+
+	8. In /etc/ssh/sshd_config, turn off password login.
+
+				PasswordAuthentication no
+
+	6. Restart sshd after every change to sshd_config
+
+		$ sudo systemctl restart sshd
+
+	
+
+# How to login to ssh server from private network?
+	
+	1. Find the name of user 
+
+		$ who
+
+	2. Find the private ip address
+
+		$ ip addr
+
+	3. Login
+
+		$ ssh <who>@<private-ip-addr> -p <port>
+
+# How to login to ssh server from public network?
+
+	1. Find the the public address on google.
+
+	2. Login
+		
+		$ ssh <who>@<ip-addr> -p <port>
 
 # Find command executable location
 
@@ -12,11 +82,15 @@
 
 	1. Create a file "script.rc"
 	2. Edit/Add new alias lines to this file 
+
 			alias <command>="<command sequence 1;command sequence 2>"
 			alias <command>="<command sequence 1;>"
+
 	3. Add path of script.rc to .bashrc file in home directory
+
 			Example:
-			source /home/Scripts/script/rc
+			source /home/Scripts/script.rc
+
 	4. Everytime the terminal opens up .bashrc file will be automatically loaded and thus scripts.rc alias will be created.
 
 # kill a dead program
@@ -35,27 +109,7 @@
 
 	$lshw
 
-# Turn the computer into ssh server
 
-	$ sudo apt install ssh
-
-	$ sudo systemctl status ssh
-
-	$ sudo systemctl enable --now ssh
-
-	(!) Open the firewall
-
-	$ sudo ufw status verbose
-
-	$ sudo ufw allow ssh
-
-	$ sudo ufw delete allow ssh 
-
-	# How to login?
-
-	$ who -> finds the name of machine
-
-	$ ip addr -> finds ap address after inet
 
 # Transfer files with scp
 	$ scp <file> <username>@<ssh_host_machine>:<remote_path_to_store_files>
