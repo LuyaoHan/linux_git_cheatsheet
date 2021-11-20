@@ -1,6 +1,9 @@
-# For a machine with new OS installation
+# Github CLI 
 
-	1) Generate ssh key
+	gh repo list
+
+	gh repo clone <repo-name>
+
 
 # Add local folders to a remote respository
 
