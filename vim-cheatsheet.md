@@ -153,13 +153,23 @@
 
 	:gT
 
-# Split the current window
+# Split the current window horizontally
 
-	horizontal split
+	----
+	win1
+	----
+	win2
+	----
 	
 	:split 
 
-	vertical split
+# Split the current window vertically
+	
+	|win1	|win2 |
+	|			|win2 |
+	|			|win2 |
+
+	:vertical split
 
 	:vsplit
 
