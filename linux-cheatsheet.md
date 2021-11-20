@@ -105,6 +105,9 @@
 
 	nslookup www.google.com
 
+# Print environment variables:
+
+	$ printenv
 
 # Find command executable location
 
