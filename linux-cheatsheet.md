@@ -20,6 +20,10 @@
 
 		$ sudo systemctl status sshd
 
+		OR
+
+		$ ps aux | grep <ps-name>
+
 	3. Open the firewall
 
 		$ sudo ufw allow ssh
