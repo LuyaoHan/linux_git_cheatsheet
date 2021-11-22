@@ -27,6 +27,12 @@ then method = "GET"
 		uri = "www.google.com"
 		version = "11.1"
 
+---- 
+
+Delete new line character in a string, and terminate on there
+
+	char* c = strstr(stringA, "\n")
+	*c = '\0'
 
 
 
