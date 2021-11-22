@@ -6,6 +6,14 @@
 
 	3. type r-s-i-s-u-b
 
+# Look up for location of a command
+
+	$ which <cmd>
+
+# Look up for what that command is.
+
+	$ whatis <cmd>
+
 # Turn a computer into ssh server
 
 	1. Install ssh
