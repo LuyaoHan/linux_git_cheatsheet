@@ -14,6 +14,15 @@
 
 	$ whatis <cmd>
 
+
+# List computer hardware information
+
+	$ lshw
+
+# List system information
+
+	$ uname -a
+
 # Turn a computer into ssh server
 
 	1. Install ssh
@@ -151,10 +160,6 @@
 # Get the last background running job's pid
 
 	$ $!
-
-# List computer hardware information
-
-	$ lshw
 
 # List computer operating system distribution
 
@@ -448,4 +453,8 @@
 	(#) Disk usage for each files in the current directory
 
 	$ du -sh *
+
+# Show the status of module in the kernel.
+
+	$ lsmod
 
