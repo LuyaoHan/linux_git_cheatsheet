@@ -24,4 +24,6 @@
 
 		$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs -j5
 
+7. The compiled faile is called 'zImage' under <proj-foler>/arch/arm/boot
+
 
