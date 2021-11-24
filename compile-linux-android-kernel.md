@@ -1,3 +1,4 @@
+
 1. Download source
 	
 		$ git clone <source-repo>
@@ -17,6 +18,10 @@
 		(!) Note that there are many commands that starts with *arm-linux-gnueabihf-* in that folder. 
 
 4. cd to the source file
+
+		$ make clean 
+
+		$ make mrproper
 
 5. make a configuration file
 
