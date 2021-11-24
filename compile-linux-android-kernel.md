@@ -14,6 +14,8 @@
 
 		export PATH=$PATH:/home/luyao/arm-rpi-4.9.3-linux-gnueabihf/bin/arm-linux-gnueabihf-
 
+		(!) Note that there are many commands that starts with *arm-linux-gnueabihf-* in that folder. 
+
 4. cd to the source file
 
 5. make a configuration file
