@@ -10,7 +10,7 @@
 
 	$ which <cmd>
 
-# Look up for what that command is.
+# Display one-line manual page descriptions 
 
 	$ whatis <cmd>
 
@@ -147,6 +147,10 @@
 	# kill command can send many different type of signalsm not only kill
 
 	$ kill -l 
+
+# Get the last background running job's pid
+
+	$ $!
 
 # List computer hardware information
 
