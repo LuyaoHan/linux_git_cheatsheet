@@ -19,7 +19,7 @@
 
 	$ lshw
 
-# List system information
+# List operating system information
 
 	$ uname -a
 
