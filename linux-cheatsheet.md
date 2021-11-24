@@ -464,3 +464,7 @@
 
 	$ lsmod
 
+# Delete a kernel module
+
+	$rmmod <module-name>
+
