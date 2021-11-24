@@ -23,6 +23,12 @@
 
 	$ uname -a
 
+# Add executable to environment path.
+
+	> export PATH=$PATH:<executable-path>
+
+	source .bashrc
+
 # Turn a computer into ssh server
 
 	1. Install ssh
