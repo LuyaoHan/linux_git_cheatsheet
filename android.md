@@ -6,6 +6,12 @@
 
 > $adb connect 172.26.37.208:5555
 
+# Install apk through adb
+
+	(!) Make sure adb debug is on
+
+	$ adb install <package>.apk
+
 #### ssh to Termux(Android Teminal) from terminal
 > Make sure phone is rooted
 

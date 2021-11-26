@@ -352,6 +352,10 @@
 	"/boot" : It contains the linux kernel, initial RAM disk image, and the bootloader. 
 
 	"/dev" : "device." It conatns files for all devices the Linux is able to recognize. 
+					
+		> "tty" basically means terminal 
+
+		> "sda" basically means harddrive
 
 	"/etc" : "(E)dit (T)ext (C)onfigurations" Human readable text files for system-wide configurations. 
 
