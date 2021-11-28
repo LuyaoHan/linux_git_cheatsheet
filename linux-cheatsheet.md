@@ -352,6 +352,8 @@
 	"/boot" : It contains the linux kernel, initial RAM disk image, and the bootloader. 
 
 	"/dev" : "device." It conatns files for all devices the Linux is able to recognize. 
+
+		All the mouses, keyboards, and serial ports are here.
 					
 		> "tty" basically means terminal 
 
@@ -368,6 +370,17 @@
 	"/opt" : "optionals." This is not essential to the OS. It is used to install third-party/user software and programs. 
 
 	"/proc" : "processes." Contains all the current processes in form of files and folders.
+				
+					 	It also contains a hierarchy of special files which represent the current state of the kernel.
+
+						This allows applications and users to peer into the kernel's view of the system. 
+
+						$ cat /proc/meminfo
+
+						$ cat /proc/cpuinfo
+
+						$ cat /proc/fs
+
 
 	 
 # Run command at OS startup 
@@ -472,3 +485,6 @@
 
 	$rmmod <module-name>
 
+# Make block or character special files (in /dev/)
+	
+	# mknod
