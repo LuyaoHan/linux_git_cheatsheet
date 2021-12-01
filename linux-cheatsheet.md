@@ -83,6 +83,10 @@
 
 	$ sudo systemctl reboot
 
+# Find out Linux kernel version
+
+	$ cat /proc/version
+
 # How to login to ssh server from private network?
 	
 	1. Find the name of user 

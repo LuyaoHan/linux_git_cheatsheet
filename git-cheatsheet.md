@@ -4,6 +4,9 @@
 
 	gh repo clone <repo-name>
 
+# Get git repository url from terminal.
+
+	$ git remote show origin
 
 # Add local folders to a remote respository
 
