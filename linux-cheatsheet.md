@@ -327,7 +327,11 @@
 
 	$ rm -rf !("folder1")
 
-# Open a directory in GUI 
+# Remove a directory.
+
+	$ rmdir <directory>
+
+# Open a directory in GUI (Ubuntu)
 
 	$ nautilus <dir>
 
