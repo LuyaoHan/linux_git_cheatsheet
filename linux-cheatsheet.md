@@ -61,7 +61,7 @@
 
 			Example: 420
 
-	6. On the local machine, generate a ssh key by:
+	6. On the local client machine, generate a ssh key by:
 
 			$ ssh-keygen 
 
