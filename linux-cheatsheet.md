@@ -500,3 +500,7 @@
 # Locate the location of a kernel module (so we can make a backup.)
 	
 	$ locate <module-name>
+
+# Convert docx to pdf
+
+	unoconv <file>
