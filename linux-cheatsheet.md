@@ -111,10 +111,10 @@
 
 # Transfer files with scp
 
-	$ scp -P <port> <file> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+	$ scp -P <port> <file> <username>@<ssh-host-machine>:<remote-path-to-stored-files>
 
 	# multuple files
-	$ scp -P <port> <file_A> <file_B> ... <file_Z> <username>@<ssh_host_machine>:<remote_path_to_store_files>
+	$ scp -P <port> <file-A> <file-B> ... <file-Z> <username>@<ssh-host-machine>:<remote-path-to-store-files>
 
 	# To find username 
 	$ whoami
@@ -496,3 +496,7 @@
 # Make block or character special files (in /dev/)
 	
 	# mknod
+
+# Locate the location of a kernel module (so we can make a backup.)
+	
+	$ locate <module-name>
