@@ -14,3 +14,17 @@
 
 	= Ctrl + Fn + DownArrow
 
+##### Make script runnable
+	$ sudo vim ~/.local/share/applications/<name>.desktop
+
+	# In the file"
+
+	[Desktop Entry]
+	Type=Application
+	Terminal=true
+	Name=<name>
+	Icon=<picture-directory>
+	Exec=<script-directory>
+
+
+
