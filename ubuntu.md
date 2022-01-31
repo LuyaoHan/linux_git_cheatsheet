@@ -14,7 +14,7 @@
 
 	= Ctrl + Fn + DownArrow
 
-##### Make script runnable
+##### Make script clickable
 	$ sudo vim ~/.local/share/applications/<name>.desktop
 
 	# In the file"
