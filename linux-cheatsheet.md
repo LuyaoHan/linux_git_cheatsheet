@@ -395,17 +395,22 @@
 
 	$ sudo crontab -e
 
+# Look for a USB bulk device (storage device) 
+	$ lsusb
+
+# Mount a USB
+
+	$ mkdir /media/<mount-point>
+
+	$ mount /dev/<usb-device> /media/<mount-point>
+
 # Unmount USB mount point
 
 	$ umount /media/<mount_point>
 
 	$ rm /media/<mount_point>
 
-# Mount a USB
 
-	$ mkdir /media/<mount_point>
-
-	$ mount /dev/<usb_device> /media/<mount_point>
 
 # Create multiple files with same extension
 	
