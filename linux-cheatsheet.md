@@ -516,4 +516,4 @@
 
 # Change font/font-size for TTY
 
-	$ dpkg-reconfigure 
+	$ dpkg-reconfigure console-setup

@@ -1,4 +1,4 @@
-#### Set up TCP connection between Android and PC (Ubuntu20.04)
+# Set up TCP connection between Android and PC (Ubuntu20.04)
 
 > $adb usb
 
@@ -12,7 +12,7 @@
 
 	$ adb install <package>.apk
 
-#### ssh to Termux(Android Teminal) from terminal
+# ssh to Termux(Android Teminal) from terminal
 > Make sure phone is rooted
 
 > Install termux on the phone from the Google App Store

@@ -1,20 +1,29 @@
-##### Open terminal
+# A list of good softwares
+	vim-gtk3
+
+# Switch between screens.
+	Ctrl + Alt + PgUp/PgDn
+
+# Search 
+	/
+
+# Open terminal
 	Ctrl + Alt + T
 
-##### Add a new tab
+# Add a new tab
 	Ctrl + Shift + T
 
-##### Go to previous tab (buffer)
+# Go to previous tab (buffer)
 	Ctrl + PageUp 
 
 	= Ctrl + Fn + UpArrow
 
-##### Go to next tab (buffer)
+# Go to next tab (buffer)
 	Ctrl + PageDown
 
 	= Ctrl + Fn + DownArrow
 
-##### Make script clickable
+# Make script clickable
 	$ sudo vim ~/.local/share/applications/<name>.desktop
 
 	# In the file"
