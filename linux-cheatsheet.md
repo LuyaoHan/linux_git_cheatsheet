@@ -513,3 +513,7 @@
 # Change system language to English
 
 	$ sudo update-locale LANG=en_US.UTF-8
+
+# Change font/font-size for TTY
+
+	$ dpkg-reconfigure 
