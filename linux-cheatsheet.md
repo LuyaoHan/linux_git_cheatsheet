@@ -496,7 +496,7 @@
 
 # Delete a kernel module
 
-	$rmmod <module-name>
+	$ rmmod <module-name>
 
 # Make block or character special files (in /dev/)
 	
@@ -508,4 +508,8 @@
 
 # Convert docx to pdf
 
-	unoconv <file>
+	$ unoconv <file>
+
+# Change system language to English
+
+	$ sudo update-locale LANG=en_US.UTF-8
