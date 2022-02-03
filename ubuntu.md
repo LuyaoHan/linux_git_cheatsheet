@@ -1,3 +1,5 @@
+# startup scripts 
+	$ vim /etc/profile
 # A list of good softwares
 	vim-gtk3
 
