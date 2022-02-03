@@ -6,6 +6,10 @@
 
 	3. type r-s-i-s-u-b
 
+# Kill all processes of a user
+
+	$ sudo killall --user <user-name>
+
 # Look up for location of a command
 
 	$ which <cmd>
@@ -517,3 +521,5 @@
 # Change font/font-size for TTY
 
 	$ dpkg-reconfigure console-setup
+
+

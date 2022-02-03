@@ -35,5 +35,6 @@
 	Icon=<picture-directory>
 	Exec=<script-directory>
 
-
+# Mapping keys
+	$ xmodmap -pke > .Xmodmap
 
