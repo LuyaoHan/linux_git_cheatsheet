@@ -399,8 +399,13 @@
 
 	$ sudo crontab -e
 
-# Look for a USB bulk device (storage device) 
-	$ lsusb
+# Look for a USB bulk device (storage device) if already mounted.
+
+	$ lsblk
+
+# Look for storage if not mounted. 
+
+	$ fdisk -l
 
 # Mount a USB
 
@@ -413,6 +418,10 @@
 	$ umount /media/<mount_point>
 
 	$ rm /media/<mount_point>
+
+# Format a SD card 
+	
+	# Find the device 
 
 
 

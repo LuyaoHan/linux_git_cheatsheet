@@ -147,3 +147,7 @@
 	$ git submodule add <repository-name> -b <branch-name> <folder-name>
 
 	# This will clone the repository's certain branch into a location folder with 'folder-name' into the current directory
+
+# Delete submodule
+
+	$ git rm -r <submodule-name>
