@@ -10,6 +10,10 @@
 
 	$ sudo killall --user <user-name>
 
+# Kill all processes of an application
+
+	$ sudo killall <application-name>
+
 # Look up for location of a command
 
 	$ which <cmd>
@@ -403,9 +407,15 @@
 
 	$ lsblk
 
+	# Look for names such as sda, sdb, sdc, etc.
+
 # Look for storage if not mounted. 
 
 	$ fdisk -l
+
+# Check free space / disk usage 
+
+	$ df
 
 # Mount a USB
 
@@ -530,5 +540,9 @@
 # Change font/font-size for TTY
 
 	$ dpkg-reconfigure console-setup
+
+# Get keycode mapping
+
+	$ xmodmap -pk
 
 

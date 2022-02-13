@@ -2,6 +2,11 @@
 	$ vim /etc/profile
 # A list of good softwares
 	vim-gtk3
+	gpick
+	realvnc viewer
+	xournal++
+	okular
+	xdotool
 
 # Switch between screens.
 	Ctrl + Alt + PgUp/PgDn
