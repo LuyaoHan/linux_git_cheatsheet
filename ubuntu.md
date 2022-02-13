@@ -1,3 +1,17 @@
+# Install packages from *.deb files
+
+	$ sudo dpkg --install <*.deb>
+
+# Remove packges installed
+
+	$ sudo dpkg --remove <package-name> 
+
+	# Use <tab> to prompt installed packages.
+
+# When there are broken chains of dependency
+
+	$ apt --fix-broken install
+
 # startup scripts 
 	$ vim /etc/profile
 # A list of good softwares
