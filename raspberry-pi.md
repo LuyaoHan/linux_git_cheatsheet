@@ -16,6 +16,8 @@
 
 	2) On another computer, install vnc viewer (realvnc viewer is preferred). When prompted the connection ip addresses, enter <raspberry-pi-ip-address>
 
+	# The user name will be 'pi' by default
+
 	If you don't know the ip address and are on the same network. Use 'raspberrypi.local' instead of the ip address also works.
 
 # Get pinout
