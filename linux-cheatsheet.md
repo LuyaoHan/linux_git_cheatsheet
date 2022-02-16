@@ -545,4 +545,8 @@
 
 	$ xmodmap -pk
 
+# Convert PNG to JPG 
+
+	$ mogrify -format JPG *.PNG
+
 
