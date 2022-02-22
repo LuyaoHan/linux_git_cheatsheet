@@ -549,4 +549,11 @@
 
 	$ mogrify -format JPG *.PNG
 
+# Rotate video by 90 deg counterclockwise. 
+ffmpeg -i <input-video> -vf "transpose=2" <output-video.mp4>
+
+# Cut video 
+ffmpeg -i <input-video> -ss 00:00:27 -t 00:13:10 -c copy <output-video.mp4>
+
+
 
