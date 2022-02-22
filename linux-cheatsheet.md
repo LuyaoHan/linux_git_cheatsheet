@@ -555,5 +555,7 @@ ffmpeg -i <input-video> -vf "transpose=2" <output-video.mp4>
 # Cut video 
 ffmpeg -i <input-video> -ss 00:00:27 -t 00:13:10 -c copy <output-video.mp4>
 
+# Merge audio track with video
+ffmpeg -i <input-video.mp4> -i <input-audio.mp3> -c copy -map 0:v:0 -map 1:a:0 <output.mp4>
 
 
