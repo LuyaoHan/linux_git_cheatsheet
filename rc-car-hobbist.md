@@ -2,6 +2,7 @@
 	- Always use heat shrink tube on joints. 
 	- Small plastic zip ties always helpful
 	- Use as little colors as possible in wires so it looks cool :)
+	- When some servo motors come with many colorful wires. You can find some other spare usb cables, cut it open, and use that cut-open plastic wire around the colorful wires on the servo. Now several wires are in black wire and looks cool!
 
 2. When two inconpatble parts need to come together.
 	- The surface may be too slipery. Avoid use tapes at all time. 
