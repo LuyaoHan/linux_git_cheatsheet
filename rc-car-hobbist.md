@@ -1,5 +1,7 @@
 1. Wiring tips
 	- Always use heat shrink tube on joints. 
+	- Small plastic zip ties always helpful
+	- Use as little colors as possible in wires so it looks cool :)
 
 2. When two inconpatble parts need to come together.
 	- The surface may be too slipery. Avoid use tapes at all time. 
