@@ -85,6 +85,16 @@
 
 		$ sudo systemctl restart sshd
 
+# ssh without password
+	# Install sshpass 
+
+	$ sudo apt install sshpass
+
+	# when ssh/scp, use 'sshpass':
+
+	$ sshpass -p '<password>' scp -o StrictHostKeyChecking=no <file-to-be-copied> <user-name>@<ip-addr/hostname>:<file-directory>
+ 
+
 # Change hostname (Computer name)
 
 	$ vim /etc/hostname
@@ -551,6 +561,9 @@
 
 # Rotate video by 90 deg counterclockwise. 
 ffmpeg -i <input-video> -vf "transpose=2" <output-video.mp4>
+
+# Convert .mp4 to .mp3
+ffmpeg -i <input-video.mp4> <output-audio.mp3>
 
 # Cut video 
 ffmpeg -i <input-video> -ss 00:00:27 -t 00:13:10 -c copy <output-video.mp4>
