@@ -33,9 +33,11 @@
 
 # Add executable to environment path.
 
-	> export PATH=$PATH:<executable-path>
+	$ sudo vim /etc/profile
 
-	source .bashrc
+	# Add the following:
+	
+		export PATH=$PATH:<path-to-executable-directionary>
 
 # Turn a computer into ssh server
 
