@@ -33,7 +33,8 @@
 
 # Add executable to environment path.
 
-	$ sudo vim /etc/profile
+	$ Either editing ~/.bashrc or /etc/profile works but /etc/profile needs reboot.
+	$ sudo vim ~.bashrc
 
 	# Add the following:
 	
@@ -421,7 +422,7 @@
 
 	# Look for names such as sda, sdb, sdc, etc.
 
-# Look for storage if not mounted. 
+# Look for storage if not mounted. Sometimes if you just formated a disk, then you need to use fdisk.
 
 	$ fdisk -l
 

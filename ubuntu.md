@@ -21,6 +21,7 @@
 	xournal++
 	okular
 	xdotool
+	notepadqq
 
 # Switch between screens.
 	Ctrl + Alt + PgUp/PgDn
