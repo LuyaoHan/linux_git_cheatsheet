@@ -4,7 +4,7 @@
 	
 	2. release  <Print Screen>
 
-	3. type r-s-i-s-u-b
+	3. type r-e-i-s-u-b
 
 # Kill all processes of a user
 
