@@ -360,6 +360,17 @@
 
 	$ ls /dev/tty*
 
+# Find serial devices
+	$ dmesg | grep tty
+
+	# Expect something like:
+
+		[20489.828127] usb 1-3.3.3: ch341-uart converter now attached to ttyUSB0
+
+		or
+
+		[20649.076411] ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
+
 # Install Debian Packages (.deb)
 
 	$ dpkg --install <.deb>
@@ -416,15 +427,30 @@
 
 	$ sudo crontab -e
 
+# Look for storage if not mounted. Sometimes if you just formated a disk, then you need to use fdisk.
+
+	$ fdisk -l
+
 # Look for a USB bulk device (storage device) if already mounted.
 
 	$ lsblk
 
-	# Look for names such as sda, sdb, sdc, etc.
+	# Look for names such as sda, sdb, sdc, etc. There might be several partitions on a same disk. For example, sda could be an entire physical hard drive, while sda1, sda2, sda3 are the partitions on it
 
-# Look for storage if not mounted. Sometimes if you just formated a disk, then you need to use fdisk.
+# Format a bulk device. 
 
-	$ fdisk -l
+	# Format to ext4 (file system type for linux systems)
+
+	$ sudo mkfs -t ext4 /dev/<bulk-device-name>
+
+	# Format to FAT32 (Compatible with all MAC, Windows, or Linux)
+
+	$ sudo mkfs -t vfat /dev/<bulk-device-name>
+
+	# Format to NTFS (Read-Write on Windows only)
+
+	$ sudo mkfs -t ntfs /dev/<bulk-device-name>
+
 
 # Check free space / disk usage 
 
