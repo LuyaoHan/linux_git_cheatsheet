@@ -256,7 +256,11 @@
 
 	$ find . -name "<name>" -maxdepth <maxdepth>
 
-# Find keyword in files 
+# Find keyword in a single file
+
+	$ grep '<keyword>' <path-to-file>
+
+# Find keyword in a list of files 
 
 	$ grep -rnw <path> -e <pattern>
 	
