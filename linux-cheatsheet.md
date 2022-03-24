@@ -426,6 +426,31 @@
 						$ cat /proc/fs
 
 
+# Some useful directories on Linux
+
+	# Exported hardware devices by the kernel at runtime. You can control gpio and other peripherals by echo > <file> ... 
+	$ cd /sys/class 
+
+	For example if we want to generate a PWM output on Raspberry Pi 4B
+	Edit /boot/config.txt
+	On last line, add
+
+	-> dtoverlay=pwm
+	This enables the PWM in device tree
+
+	$ sudo reboot
+
+	$ echo 0 > /sys/class/pwm/pwmchip0/export # enable PWM0 on GPIO18
+
+	$ echo 20000000 > sys/class/pwm/pwmchip0/pwm0/period # ns -> 50Hz
+
+	$ echo 2000000 > sys/class/pwm/pwmchip0/pwm0/period # Duty cycle
+
+	$ echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable # Enable the PWM
+
+	Plug in an osciloscope onto GPIO18 and we should observe 50Hz PWM.
+
+
 	 
 # Run command at OS startup 
 
