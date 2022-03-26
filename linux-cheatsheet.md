@@ -413,7 +413,7 @@
 
 	"/opt" : "optionals." This is not essential to the OS. It is used to install third-party/user software and programs. 
 
-	"/proc" : "processes." Contains all the current processes in form of files and folders.
+	"/proc" : "processes." Virtual directory -- contains current systems information and processes in form of files and folders.
 				
 					 	It also contains a hierarchy of special files which represent the current state of the kernel.
 
