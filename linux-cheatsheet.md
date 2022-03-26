@@ -450,6 +450,9 @@
 
 	Plug in an osciloscope onto GPIO18 and we should observe 50Hz PWM.
 
+	# List the loaded device-tree
+	$ ls /proc/device-tree
+
 
 	 
 # Run command at OS startup 
