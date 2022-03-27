@@ -22,6 +22,12 @@
 
 	$ whatis <cmd>
 
+# Run command as sudo
+
+	$ sudo bash -c '<actual command>'
+
+	# Note that if we don't use -c option then command such as sudo echo > ...somefile will not execute properly.
+
 
 # List computer hardware information
 
@@ -452,6 +458,9 @@
 
 	# List the loaded device-tree nodes
 	$ ls /proc/device-tree
+
+	# List the kernel platform drivers	
+	$ ls /sys/bus/platform/drivers
 
 
 	 
