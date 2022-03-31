@@ -462,6 +462,11 @@
 	# List the kernel platform drivers	
 	$ ls /sys/bus/platform/drivers
 
+	# The directory where you can access the touchscreen input
+	$ cd /dev/input/by-id
+	$ sudo hexdump usb-ELAN_Touchscreen-event-if00
+
+
 
 	 
 # Run command at OS startup 
