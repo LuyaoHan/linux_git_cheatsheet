@@ -22,6 +22,12 @@
 
 	$ whatis <cmd>
 
+# Run command as sudo
+
+	$ sudo bash -c '<actual command>'
+
+	# Note that if we don't use -c option then command such as sudo echo > ...somefile will not execute properly.
+
 
 # List computer hardware information
 
@@ -416,7 +422,7 @@
 
 	"/opt" : "optionals." This is not essential to the OS. It is used to install third-party/user software and programs. 
 
-	"/proc" : "processes." Contains all the current processes in form of files and folders.
+	"/proc" : "processes." Virtual directory -- contains current systems information and processes in form of files and folders.
 				
 					 	It also contains a hierarchy of special files which represent the current state of the kernel.
 
@@ -453,6 +459,7 @@
 
 	Plug in an osciloscope onto GPIO18 and we should observe 50Hz PWM.
 
+<<<<<<< HEAD
   Another example is to turn on LED with sysfs
   
   $ echo 18 /sys/class/gpio/export # configure gpio 18
@@ -462,6 +469,19 @@
   $ echo 1 > /sys/class/gpio/gpio18/value
 
    
+=======
+	# List the loaded device-tree nodes
+	$ ls /proc/device-tree
+
+	# List the kernel platform drivers	
+	$ ls /sys/bus/platform/drivers
+
+	# The directory where you can access the touchscreen input
+	$ cd /dev/input/by-id
+	$ sudo hexdump usb-ELAN_Touchscreen-event-if00
+
+
+>>>>>>> bbbbfaa78e35c93048a058884aed2e661b024fbc
 
 	 
 # Run command at OS startup 
