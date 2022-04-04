@@ -46,7 +46,13 @@
 
 		$ sudo apt install ssh
 
-	2. Start ssh daemon
+	2. Open the firewall if on Ubuntu. Allow SSH if on Raspbian OS.
+
+		$ sudo ufw allow ssh
+	
+		$ sudo ufw status verbose
+
+	3. Start ssh daemon
 
 		$ sudo systemctl start sshd
 
@@ -58,11 +64,8 @@
 
 		$ ps aux | grep <ps-name>
 
-	3. Open the firewall
+  If on the same network, try now with $ ssh <usr-name>@<ip-address> should work. If on different networj (different wifi router), proceed.
 
-		$ sudo ufw allow ssh
-	
-		$ sudo ufw status verbose
 
 	4. Login to router control panel and add port forwarding port. For example, 777.
 
@@ -450,6 +453,15 @@
 
 	Plug in an osciloscope onto GPIO18 and we should observe 50Hz PWM.
 
+  Another example is to turn on LED with sysfs
+  
+  $ echo 18 /sys/class/gpio/export # configure gpio 18
+
+  $ echo out > /sys/class/gpio/gpio18/direction
+
+  $ echo 1 > /sys/class/gpio/gpio18/value
+
+   
 
 	 
 # Run command at OS startup 
