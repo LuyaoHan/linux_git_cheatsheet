@@ -6,9 +6,10 @@
 	5. The oil should start making noise, throw in the garlic and green onion.	6. After 3 minutes, throw in the onions. 
 	7. Add low amount of sugar. 
 	8. Add beaf.
-	9. Add low amount of soy sauce.
-	10. Add low amount of sugar.
-	11. Add low amount of soy sauce.
-	12. Add low amount of sugar.
-	13. Add low amount of soy sauce.
-	14. Add low amount of sugar.
+	9. Add low amount of soy sauce. Stir.
+	10. Add low amount of sugar. Stir.
+	11. Add low amount of soy sauce. Stir.
+	12. Add low amount of sugar. Stir.
+	13. Add low amount of soy sauce. Stir.
+	14. Add low amount of sugar. Stir.
+	15. Make sure this is stirred, not waterish.
