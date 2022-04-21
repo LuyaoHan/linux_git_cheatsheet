@@ -49,6 +49,15 @@
 		Unable to match requested speed 2000 kHz, using 1800 kHz
 		adapter speed: 1800 kHz
 
+# The above process is complicated, involves a lot of steps, this can be condensed to one command:
+
+		$ sudo openocd -f /usr/share/openocd/scripts/interface/stlink-v2-1.cfg -f /usr/share/openocd/scripts/target/stm32f4x.cfg -c 'program ./build/nRF24-transmitter.elf verify reset exit'
+
+
+
+
+	
+
 
 
 	
