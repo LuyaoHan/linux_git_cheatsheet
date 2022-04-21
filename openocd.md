@@ -8,6 +8,9 @@
 
 	$	sudo openocd -f /usr/share/openocd/scripts/interface/stlink-v2-1.cfg -f /usr/share/openocd/scripts/target/stm32f4x.cfg
 
+	(!) If it shows waning on device ID, not recognized as a STM32 family. It's probably because we have selected the wrong cfg file.
+
+	Expected output:
 		>
 		Open On-Chip Debugger 0.10.0
 		Licensed under GNU GPL v2
