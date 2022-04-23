@@ -2,7 +2,19 @@
 
 	$ sudo apt install openocd
 
-# Target board is STM32F401RE Nucleo Board, Host Ubuntu 18.04
+# Following example, target board is STM32F401RE Nucleo Board, Host Ubuntu 18.04
+
+	To make sure st-link is detected
+
+	$ st-info --probe
+	>
+		Found 1 stlink programmers
+		version:    V2J33S25
+		serial:     066DFF545071494867223048
+		flash:      524288 (pagesize: 16384)
+		sram:       98304
+		chipid:     0x0433
+		descr:      F4xx (Dynamic Efficency)
 
 	The configuration files specifies the SWD interface and the target board.
 
@@ -28,12 +40,18 @@
 		Info : using stlink api v2
 		Info : Target voltage: 3.248915
 		Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+		[EMPTY LINES]
 
-
-
-	This will start an openocd terminal, in order to open that terminal:
+	This will start an openocd server, in order to use command line on OpenOCD server, connect to localhost:
 
 	$ telnet localhost 4444
+
+		Trying 127.0.0.1...
+		Connected to localhost.
+		Escape character is '^]'.
+		Open On-Chip Debugger
+	>
+
 
 	> reset halt                             
 		Unable to match requested speed 2000 kHz, using 1800 kHz
@@ -52,11 +70,12 @@
 		Unable to match requested speed 2000 kHz, using 1800 kHz
 		adapter speed: 1800 kHz
 
+
 # The above process is complicated, involves a lot of steps, this can be condensed to one command:
 
 		$ sudo openocd -f /usr/share/openocd/scripts/interface/stlink-v2-1.cfg -f /usr/share/openocd/scripts/target/stm32f4x.cfg -c 'program ./build/nRF24-transmitter.elf verify reset exit'
 
-		A log indicating successful writing procedure:
+		Following is log indicating successful writing procedure:
 
 		Open On-Chip Debugger 0.10.0
 		Licensed under GNU GPL v2
@@ -102,6 +121,79 @@
 		Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 		adapter speed: 1800 kHz
 		shutdown command invoked
+
+
+# To use GDB (arm-none-eabi-gdb) with OpenOCD, make sure to start the OpenOCD server first.
+
+		For target board is STM32F401RE Nucleo Board, Host Ubuntu 18.04
+
+		$ sudo openocd -f /usr/share/openocd/scripts/interface/stlink-v2-1.cfg -f /usr/share/openocd/scripts/target/stm32f4x.cfg
+
+		In another window
+
+		$ arm-none-gnueabi-gdb main.elf
+
+		(gdb) > target remote localhost:3333
+
+		Remote debugging using localhost:3333
+		0x00000000 in ?? ()
+
+		/* monitor means that the proceeding commands are for debugger program, in this case, OpenOCD. */
+		(gdb) monitor reset halt
+		Unable to match requested speed 2000 kHz, using 1800 kHz
+		Unable to match requested speed 2000 kHz, using 1800 kHz
+		adapter speed: 1800 kHz
+		target halted due to debug-request, current mode: Thread 
+		xPSR: 0x01000000 pc: 0x080028b8 msp: 0x20018000
+
+		(gdb) load
+		Loading section .isr_vector, size 0x194 lma 0x8000000
+		Loading section .text, size 0x2a74 lma 0x80001c0
+		Loading section .rodata, size 0x2c8 lma 0x8002c34
+		Loading section .ARM, size 0x8 lma 0x8002efc
+		Loading section .init_array, size 0x4 lma 0x8002f04
+		Loading section .fini_array, size 0x4 lma 0x8002f08
+		Loading section .data, size 0x70 lma 0x8002f0c
+		Start address 0x08002bc8, load size 12112
+		Transfer rate: 16 KB/sec, 1730 bytes/write.
+
+
+# embedded GDB programs 
+
+		list
+		(gdb) l 
+
+		continue
+		(gdb) c 
+
+		break
+		(gdb) b
+
+		step (in / out / next)
+		(gdb) s 
+
+		next 
+		(gdb) n
+
+		until line xxx
+		(gdb) u
+
+		finish running
+		(gdb) finish 
+
+		print 
+		(gdb) p
+
+		display traced variable
+		(gdb) display
+
+		back-trace
+		(gdb) bt
+
+		quit
+		(gdb) q
+		(gdb) - 
+
 
 
 
