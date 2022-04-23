@@ -192,6 +192,8 @@
 
 		quit
 		(gdb) q
+
+		enter GUI
 		(gdb) - 
 
 
