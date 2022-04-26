@@ -146,6 +146,7 @@
 		target halted due to debug-request, current mode: Thread 
 		xPSR: 0x01000000 pc: 0x080028b8 msp: 0x20018000
 
+		(!) We must use load before (gdb)continue! Only that it can start run the program normally.
 		(gdb) load
 		Loading section .isr_vector, size 0x194 lma 0x8000000
 		Loading section .text, size 0x2a74 lma 0x80001c0
@@ -166,8 +167,11 @@
 		continue
 		(gdb) c 
 
-		break
+		break, add breakpoint
 		(gdb) b
+
+		information, display informaion about breakpoint
+		(gdb) i b
 
 		step (in / out / next)
 		(gdb) s 
@@ -178,11 +182,14 @@
 		until line xxx
 		(gdb) u
 
-		finish running
+		finish, essentially run until the end of current function.
 		(gdb) finish 
 
 		print 
 		(gdb) p
+
+		print hex 
+		(gdb) p/x <variable>
 
 		display traced variable
 		(gdb) display

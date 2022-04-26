@@ -187,6 +187,18 @@
 
 $ git submodule update --init
 
+# Make current commit new head
+
+ $ git reset --hard
+
+ > HEAD is now at xxxx
+
+ $ git checkout -B master
+
+ Now do a normal push...
+
+
+
 
 	
 
