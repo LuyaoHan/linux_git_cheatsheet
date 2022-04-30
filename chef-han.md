@@ -13,3 +13,10 @@
 	13. Add low amount of soy sauce. Stir.
 	14. Add low amount of sugar. Stir.
 	15. Make sure this is stirred, not waterish.
+
+# Red braised pork belly : Pork Belly Cane Sugar Scallions Soy Sauce
+		1. Turn on hot pan, without any oil, place the skin side of the pork onto the pan until crispy
+		2. Cut the pork belly into pieces, add small amount of cooking oil and fry until the fat are out in liquid.
+		3. Now get rid of all the fats. Pour in water, add scallions pieces. 
+		4. Pour pork belly pieces back.
+		5. Add Soy Sauce back, add sugar and boil until squishy
