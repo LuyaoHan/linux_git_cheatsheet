@@ -40,7 +40,7 @@
 # Add executable to environment path.
 
 	$ Either editing ~/.bashrc or /etc/profile works but /etc/profile needs reboot.
-	$ sudo vim ~.bashrc
+	$ sudo vim ~/.bashrc
 
 	# Add the following:
 	

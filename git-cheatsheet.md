@@ -112,7 +112,8 @@
 
 		$ git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch flashing-linux-sd/recipe/filesystem/rootfs.tar.bz2'
 
-		luyaohan1001@lyc:~/Projects/imx6ull-embedded$ git commit -m 'sync'
+		# Next make a normal push.
+		$ git commit -m 'sync'
 		[master 0892bb4] sync
 		 2 files changed, 1 insertion(+)
 		 create mode 100644 .gitignore

@@ -265,6 +265,10 @@
 
 	$ vim -d <file1> <file2>
 
+	Or, with one file already opened
+
+	$ vertical diffsplit <file2>
+
 # Set tab equal to N spaces 
 
 	:set tabstop=<N>
