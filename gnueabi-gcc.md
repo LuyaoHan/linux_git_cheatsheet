@@ -15,3 +15,6 @@
 
 # Get assembly from executable
 	$ arm-none-gnueabi-objdump -D main.o > main.S
+
+# View memory mapping
+	$ arm-none-eabi-objdump -h <main>.elf
