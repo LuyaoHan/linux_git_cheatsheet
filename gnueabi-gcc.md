@@ -18,3 +18,6 @@
 
 # View memory mapping
 	$ arm-none-eabi-objdump -h <main>.elf
+
+# View addresses of functions
+	$ arm-none-eabi-objdump -t <main>.elf

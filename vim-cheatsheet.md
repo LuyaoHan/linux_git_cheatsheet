@@ -334,4 +334,7 @@
 
 	:<Ctrl+w> <Ctrl+r>
 
+# Open and read-only
+  $ vim -R <file>
+
 

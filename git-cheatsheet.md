@@ -119,6 +119,9 @@
 		 create mode 100644 .gitignore
 		 delete mode 100644 flashing-linux-sd/recipe/filesystem/rootfs.tar.bz2
 
+		# Force push if current repository is behind remote.
+		$ git push -f origin master
+
 # Untrack all files
 	
 	$ git rm --cached -r . 

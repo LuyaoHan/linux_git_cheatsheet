@@ -295,6 +295,10 @@
 	$ du -sh <dir/file>
 
 	$ du --summarize --human-readable <dir/file>
+
+# Check disk usage
+
+	$ df -h .
  
 # List only directories 
 

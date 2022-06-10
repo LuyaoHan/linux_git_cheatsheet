@@ -131,7 +131,7 @@
 
 		In another window
 
-		$ arm-none-gnueabi-gdb main.elf
+		$ arm-none-eabi-gdb main.elf
 
 		(gdb) > target remote localhost:3333
 
@@ -173,17 +173,17 @@
 		information, display informaion about breakpoint
 		(gdb) i b
 
-		step (in / out / next)
+		step (in / next)
 		(gdb) s 
+
+		finish, essentially run until the end of current function.
+		(gdb) finish 
 
 		next 
 		(gdb) n
 
 		until line xxx
 		(gdb) u
-
-		finish, essentially run until the end of current function.
-		(gdb) finish 
 
 		print 
 		(gdb) p
@@ -202,6 +202,16 @@
 
 		enter GUI
 		(gdb) - 
+
+		switch to assembly layout
+		(gdb) layout asm
+
+		generate core dump
+		(gdb) generate-core-file
+    > Saved corefile ...
+		
+
+
 
 
 
