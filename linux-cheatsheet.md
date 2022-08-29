@@ -39,7 +39,9 @@
 
 # Add executable to environment path.
 
-	$ Either editing ~/.bashrc or /etc/profile works but /etc/profile needs reboot.
+  Either editing ~/.bashrc or /etc/profile works but /etc/profile needs reboot.
+	~/.profile also works
+  
 	$ sudo vim ~/.bashrc
 
 	# Add the following:
@@ -351,11 +353,11 @@
 	$ split --bytes=100M <target>.tar.gz <target_splited> --verbose
  
 
-	For '<target_split>', the suggested name is e.g. "Installer_Splited_"
+	For '<target_split>', the suggested name is e.g. "file_splited_"
 	
 	Then the files created from the split will be automatically named:
 	
-	"Installer_Splited_aa", "Installer_Splited_ab", etc.  
+	"file_splited_aa", "file_splited_ab", etc.  
 
 # Remove all files in a folder except one/few
 	

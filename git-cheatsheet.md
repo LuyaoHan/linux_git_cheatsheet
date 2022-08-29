@@ -202,7 +202,8 @@ $ git submodule update --init
  Now do a normal push...
 
 
-
+# List files cached before commit
+	$ git diff --cached
 
 	
 

@@ -123,6 +123,25 @@
 		shutdown command invoked
 
 
+		(!) Sometimes it may not be viable to run mutliple commands together. 
+		Instead of that, try something such as:
+
+			sudo /opt/openocd/bin/openocd \
+	    -f /opt/openocd/share/openocd/scripts/interface/stlink-v2-1.cfg \
+	    -f /opt/openocd/share/openocd/scripts/target/nrf52.cfg \
+	    -c "init" \
+	    -c "halt" \
+	    -c "nrf5 mass_erase" \
+	    -c "flash write_image /home/luyaohan1001/Projects/nrf52/sdk/nrf5-sdk/examples/luyaohan1001/blinky_freertos/pca10040/blank/armgcc/build/nrf52832_xxaa.hex" \
+	    -c "reset" \
+	    -c "exit"
+
+		Where there are multiple -c.
+
+
+		$ sudo openocd -f /usr/share/openocd/scripts/interface/stlink-v2-1.cfg -f /usr/share/openocd/scripts/target/stm32f4x.cfg -c 'program ./build/nRF24-transmitter.elf verify reset exit'
+
+
 # To use GDB (arm-none-eabi-gdb) with OpenOCD, make sure to start the OpenOCD server first.
 
 		For target board is STM32F401RE Nucleo Board, Host Ubuntu 18.04
@@ -145,6 +164,18 @@
 		adapter speed: 1800 kHz
 		target halted due to debug-request, current mode: Thread 
 		xPSR: 0x01000000 pc: 0x080028b8 msp: 0x20018000
+
+		Note that here monitor is a open-ocd commands, it mean to pass following command to the target.
+		reset halt is specific to the chip. 
+		For example, for nrf52 it is possible to:
+
+    (gdb) monitor halt
+    target halted due to debug-request, current mode: Thread 
+    xPSR: 0x41000000 pc: 0x00000710 psp: 0x200007f8
+
+    (gdb) monitor flash write_image /home/luyaohan1001/Projects/nrf52/sdk/nrf5-sdk/examples/luyaohan1001/blinky_freertos/pca10040/blank/armgcc/build/nrf52832_xxaa.hex
+    wrote 12284 bytes from file /home/luyaohan1001/Projects/nrf52/sdk/nrf5-sdk/examples/luyaohan1001/blinky_freertos/pca10040/blank/armgcc/build/nrf52832_xxaa.hex in 0.398178s (30.127 KiB/s)
+
 
 		(!) We must use load before (gdb)continue! Only that it can start run the program normally.
 		(gdb) load
@@ -209,7 +240,11 @@
 		generate core dump
 		(gdb) generate-core-file
     > Saved corefile ...
-		
+
+# In Ubuntu the openocd scripts are located in /usr/local/share/openocd/scripts
+OpenOCD Config Files: https://elinux.org/OpenOCD_Config_Files
+$ sudo openocd -f interface/stlink-v2-1.cfg  -f target/nrf52.cfg	
+$ telnet localhost:4444
 
 
 
