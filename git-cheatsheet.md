@@ -4,6 +4,11 @@
 
 	gh repo clone <repo-name>
 
+# Create a new branch
+	$ git checkout -b <branch-name>
+
+# Use another branch's file into current branch
+	$ git checkout <branch-name> <file-in-that-branch-to-be-copied-to-current-branch>
 # Get git repository url from terminal.
 
 	$ git remote show origin
