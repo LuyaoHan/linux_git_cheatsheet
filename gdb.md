@@ -9,7 +9,8 @@ $ gdb
 (gdb) !ls
 (gdb) !make
 
-# Delete all breakpoints
+# Send special commands to gdb-server (usually hardware dependent) 
+(gdb) monitor tpiu config, etc.
 
 # Apply to all threads, print backtrace
 (gdb) thread apply all bt
@@ -20,9 +21,14 @@ $ gdb
 # Open gdb for MCU
 (gdb) gdb-multiarch
 
+# Connect to remote target
+(gdb) target remote localhost:3333
+
 # Delete all breakpoints
 (gdb) delete
 
 # Delete certain breakpoints
 (gdb) delete <N>
+Delete all breakpoints? (y or n) y
+
 
