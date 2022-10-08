@@ -3,6 +3,12 @@ $ gdb
 (gdb) p <variable>
 (gdb) p/x <variable>
 
+# Enter gdb
+$ gdb
+
+# Load a flie / executable
+(gdb) file main
+
 # Print binary
 (gdb) p/t <variable>
 
