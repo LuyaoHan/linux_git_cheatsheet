@@ -37,4 +37,8 @@ $ gdb
 (gdb) delete <N>
 Delete all breakpoints? (y or n) y
 
+# Change focus in visual mode
+(gdb) focus cmd
+(gdb) focus src
+
 
