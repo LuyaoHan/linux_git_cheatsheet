@@ -46,6 +46,10 @@
 	
  	$ git config --global user.name <name>
 
+	3) Configure git commit message editor
+
+	$ git config --global core.editor "vim"
+
 # Clone your fork:
 
 	$ git clone git@github.com:<username>/<FORKED_REPO>.git
@@ -209,6 +213,8 @@ $ git submodule update --init
 
 # List files cached before commit
 	$ git diff --cached
+
+
 
 	
 
