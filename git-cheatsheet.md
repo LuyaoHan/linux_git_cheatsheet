@@ -98,38 +98,11 @@
 	
 	$ git add reset <file_name>
 
-# To ignore a file that is already checked in, need to untrack the file manually.
+# To delete the last local commit.
 	
-	$ git rm --cached <file_name>
+	$ git reset HEAD^.
 
-	$ git commit --amend -CHEAD
-
-
-	For example, when we have a single file with size exceeds 100MB, we get error:
-
-		remote: error: File flashing-linux-sd/recipe/filesystem/rootfs.tar.bz2 is 111.66 MB; this exceeds GitHub's file size limit of 100.00 MB
-		remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
-		To git@github.com:luyaohan1001/imx6ull-embedded.git
-		 ! [remote rejected] master -> master (pre-receive hook declined)
-		error: failed to push some refs to 'git@github.com:luyaohan1001/imx6ull-embedded.git'
-
-		What we can do is:
-
-		$ git rm --cached flashing-linux-sd/recipe/filesystem/rootfs.tar.bz2
-	
-		$ git reset -hard
-
-		$ git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch flashing-linux-sd/recipe/filesystem/rootfs.tar.bz2'
-
-		# Next make a normal push.
-		$ git commit -m 'sync'
-		[master 0892bb4] sync
-		 2 files changed, 1 insertion(+)
-		 create mode 100644 .gitignore
-		 delete mode 100644 flashing-linux-sd/recipe/filesystem/rootfs.tar.bz2
-
-		# Force push if current repository is behind remote.
-		$ git push -f origin master
+	This will keep the change and actual state of files, and just flushing the commits of them.
 
 # Untrack all files
 	

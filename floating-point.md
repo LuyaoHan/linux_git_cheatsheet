@@ -1,11 +1,26 @@
 Same values executed in different orders gets you different values.
 IEEE 754 Single Precision:
-- Unnormalized number: value smaller than the smallest fraction will be represented as unnormalied. (0.00001010)
+- Denormalized number: value smaller than the smallest fraction will be represented as unnormalied. (0.00001010) These are value too small to be represented in normalized range. Usually these are values really close to 0 (can be positive to negative)
 
 	(-1)**sign * mantissa * (1 - exponent)
 
+	Binary representation:
+	(s)   00000000     xxxxxxxxxxxxxxxxxxxxxxx
+	|	  |			   |
+	sign  always 8 0s  32 bit denormalized value
+
+	Largest denormalized value:
+	0b 0 00000000 1111111111111111111111
+
 - Normalized number: large value: 1.1011 * 10**23
 	(-1) ** sign * 1.mantessa * (exponent - 127)
+
+	Binary representation:
+	(s)   eeeeeeee     xxxxxxxxxxxxxxxxxxxxxxx
+	|	  |			   |
+	sign  Exp - 127    32 bit denormalized value
+
+Why 127 is the bias?
 
 - Trap: Float point comparison 0.01 == 0.01 is not accurate, must do 
 fabs(0.01-0.01) < some limit
