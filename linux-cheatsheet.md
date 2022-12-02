@@ -10,6 +10,9 @@
 
 	$ sudo killall --user <user-name>
 
+# Kill process with vague name
+	$ sudo pkill -f "<process_partial_name>"
+
 # Kill all processes of an application
 
 	$ sudo killall <application-name>

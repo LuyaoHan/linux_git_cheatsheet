@@ -104,6 +104,11 @@
 
 	This will keep the change and actual state of files, and just flushing the commits of them.
 
+# If there are large files in the commit history, and you cannot delete even after reset:
+    (!) git-filter-branch has a glut of gotchas generating mangled history rewrites.
+
+    $ git filter-branch -f --tree-filter 'rm -f </path/to/file>' HEAD --all
+
 # Untrack all files
 	
 	$ git rm --cached -r . 
