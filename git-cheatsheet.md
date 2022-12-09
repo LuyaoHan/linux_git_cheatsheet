@@ -31,7 +31,7 @@
 
 # Generate ssh key for a machine with new OS installation
 
-	$ ssh-keygen -o
+	$ ssh-keygen -t ed25519 -C "your_email@example.com"
 	
 	### Enter <Enter> for default "key" and "passphrase" entry 
 
