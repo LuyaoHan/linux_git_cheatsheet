@@ -677,4 +677,8 @@ ffmpeg -i <input-video.mp4> -i <input-audio.mp3> -c copy -map 0:v:0 -map 1:a:0 <
 	# a: all users
 	# rw: read-write
 
+# List error codes 
+
+	$ errno -l
+
 

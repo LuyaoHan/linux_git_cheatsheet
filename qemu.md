@@ -1,11 +1,20 @@
 # Install QEMU
 
-# Two things needed for linux to boot:
-1. built linux kernel 
-2. rootfs (use ramdisk)
+	$ sudo apt-get install qemu-system
 
-# qemu-system-x86_64 -kernel arch/x86_64/boot/bzImage
-Expect kernel panic
+# Download raspbian kernel
 
-# Minimal:
-# qemu-system-x86_64 -kernel arch/x86_64/boot/bzImage initrd ramdisk.img
+	Latest qemu kernel: https://github.com/dhruvvyas90/qemu-rpi-kernel
+
+# Start QEMU to emulate rapbian
+
+	$ qemu-system-arm 
+	  -kernel ~/Projects/raspbian_qemu/qemu-rpi-kernel/kernel-qemu-4.19.50-buster \
+      -cpu arm1176 \
+      -m 256 \ 
+      -M versatilepb \
+      -serial stdio \ 
+      -append "root=/dev/sda2 rootfstype=ext4 rw" \
+ 	  -hda ~/Projects/raspbian_qemu/2022-09-22-raspios-buster-armhf.img \
+      -dtb qemu-rpi-kernel/versatile-pb-buster-5.4.51.dtb
+
