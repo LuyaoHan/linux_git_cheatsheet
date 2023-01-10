@@ -23,3 +23,6 @@
 # Get pinout
 
 	$ pinout
+
+# VNC with 1920x1080
+	vncserver :0 -geometry 1920x1080 -depth 24

@@ -1,3 +1,9 @@
+# List connected devices through USB.
+
+> $ adb devices
+
+> $ adb shell
+
 # Set up TCP connection between Android and PC (Ubuntu20.04)
 
 > $adb usb

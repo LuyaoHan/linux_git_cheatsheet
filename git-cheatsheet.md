@@ -1,3 +1,9 @@
+# Git clone only a branch
+
+	$ git clone --depth=1 --branch <branch/tag name> <repo_url>
+
+	depth=1 just fetch the branch tips and no prior history, this truncates the fetch size.
+
 # Github CLI 
 
 	gh repo list

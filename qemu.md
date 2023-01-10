@@ -8,7 +8,7 @@
 
 # Start QEMU to emulate rapbian
 
-	$ qemu-system-arm 
+	$ qemu-system-arm \
 	  -kernel ~/Projects/raspbian_qemu/qemu-rpi-kernel/kernel-qemu-4.19.50-buster \
       -cpu arm1176 \
       -m 256 \ 
